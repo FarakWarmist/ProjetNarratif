@@ -16,8 +16,8 @@ Tu peux revenir dans ta [chambre].
                     Console.WriteLine("Vous vous allongez sur le sofa. Vous prenez un petit 5 minutes pour vous reposer.");
                     break;
                 case "tv":
-                    Console.WriteLine("Vous allumez la télévision. À votre plus grande surprise, vous entendez une voix famillière de l'autre de l'écran. " +
-                        "\nEn posant vos mains dessus, vous vous sentez soudainement tiré dans la télévison...");
+                    Console.WriteLine("Vous allumez la télévision. À votre plus grande surprise, vous entendez une voix familière de l'autre de l'écran. " +
+                        "\nEn posant vos mains dessus, vous vous sentez soudainement tiré dans la télévision...");
                     Game.Finish();
                     break;
                 default:
