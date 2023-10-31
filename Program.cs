@@ -2,6 +2,18 @@
 using ProjetNarratif.Rooms;
 
 var game = new Game();
+game.Add(new Introduction());
+
+game.Add(new Closet());
+game.Add(new OutCloset());
+game.Add(new OutClosetLackOfEquip());
+game.Add(new Cashier());
+game.Add(new Freezer());
+game.Add(new Phone());
+game.Add(new Backstore());
+game.Add(new Butchery());
+
+
 game.Add(new Bedroom());
 game.Add(new Bathroom());
 game.Add(new AtticRoom());
