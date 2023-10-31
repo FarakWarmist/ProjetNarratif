@@ -3,6 +3,7 @@
     internal class Bathroom : Room
     {
         internal static bool isHotWaterTrigged;
+
         internal override string CreateDescription() =>
 @"Dans la toilette, le [bain] est rempli d'eau chaude.
 Le [miroir] devant toi affiche ton visage déprimé.
