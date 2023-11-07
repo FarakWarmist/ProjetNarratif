@@ -3,7 +3,8 @@
     internal class OutCloset : Room
     {
         internal override string CreateDescription() =>
-@"Vous sortez et vous vous retrouvez dans un endroit plongé dans l'ombre illuminé
+@"
+Vous sortez et vous vous retrouvez dans un endroit plongé dans l'ombre illuminé
 que part la lumière bleuté de congélateur.
 Vous pouvez percevoir quelque étagère semblable à celle qu'on pourrait retrouver
 dans une épicerie, mais elles montent beaucoup plus haut que celles que vous connaissez.

@@ -3,12 +3,13 @@ using ProjetNarratif.Rooms;
 
 var game = new Game();
 game.Add(new Introduction());
-
 game.Add(new Closet());
-game.Add(new OutCloset());
-game.Add(new OutClosetLackOfEquip());
+    game.Add(new OutCloset());
+        game.Add(new OutClosetLackOfEquip());
 game.Add(new Cashier());
+    game.Add(new MamaOlgaIsHere());
 game.Add(new Freezer());
+    game.Add(new IntoFreezer());
 game.Add(new Phone());
 game.Add(new Backstore());
 game.Add(new Butchery());
