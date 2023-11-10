@@ -1,10 +1,13 @@
-﻿namespace ProjetNarratif.Rooms
+namespace ProjetNarratif.Rooms
 {
     internal class Freezer : Room
     {
 
         internal override string CreateDescription() =>
 @"";
+Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
+endroit avec votre [CARTE].
+";
 
         internal override void ReceiveChoice(string choice)
         {
@@ -21,6 +24,10 @@
                     {
                         Game.Transition<IntoFreezer>();
                     }
+                    break;
+
+                case "inventaire":
+                    Game.Inventory();
                     break;
 
                 case "carte":

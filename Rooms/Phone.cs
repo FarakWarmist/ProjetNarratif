@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ProjetNarratif.Rooms
 {
@@ -16,8 +16,9 @@ namespace ProjetNarratif.Rooms
 plusieurs [DÉTRITUS] sont éparpillés sur le sol. Un étrange [TÉLÉPHONE] fix se tient au beau
 milieu de se désordre.
 
-Vous pouvez [REGARDER] les alentours ou vous diriger vers un autre endroit avec
-votre [CARTE].";
+Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
+endroit avec votre [CARTE].
+";
 
         internal override void ReceiveChoice(string choice)
         {
@@ -451,6 +452,10 @@ les autres produits : « Majeur au vinaigre », « Œil à l'ail », « Biceps s
 conserve »...
 
 Vous savez au fond de vous que c'est ce qui vous attend si vous ne partez pas vite d'ici.");
+                    break;
+
+                case "inventaire":
+                    Game.Inventory();
                     break;
 
                 case "carte":

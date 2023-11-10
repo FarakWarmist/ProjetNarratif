@@ -18,7 +18,7 @@ moteur étouffé et par la seule ampoule qui clignote sans cesse acrochez au pla
 Un gros [TAS DE LINGE] mouillés se trouve au fond de la pièce, une boîte de [DISJONCTEUR] et
 une [PORTE].
 
-Vous pouvez [REGARDER] les alentours.
+Vous pouvez [REGARDER] les alentours ou regarder votre [INVENTAIRE].
 ";
 
         internal override void ReceiveChoice(string choice)
@@ -167,6 +167,10 @@ La [PORTE] est maintenant déverrouillez.");
                     isFlashlightCollected = true;
                     }
                     
+                    break;
+
+                case "inventaire":
+                    Game.Inventory();
                     break;
 
                 case "carte":

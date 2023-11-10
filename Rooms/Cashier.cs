@@ -1,4 +1,4 @@
-﻿namespace ProjetNarratif.Rooms
+namespace ProjetNarratif.Rooms
 {
     internal class Cashier : Room
     {
@@ -19,9 +19,8 @@ Il semble avoir une [PERSONNE] derrière la caisse du milieu.
 Tout au fond, vous pouvez voir dans le coin une immense [PORTE].
 La première [CAISSE] attire aussi votre attention.
 
-Vous pouvez [REGARDER] les alentours ou vous diriger vers un autre endroit avec
-votre [CARTE].
-";
+Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
+endroit avec votre [CARTE].";
 
         internal override void ReceiveChoice(string choice)
         {
@@ -113,6 +112,10 @@ Voulez vous la prendre?
                         Console.WriteLine(
 @"");
                     }
+                    break;
+
+                case "inventaire":
+                    Game.Inventory();
                     break;
 
                 case "carte":

@@ -5,41 +5,33 @@
         internal override string CreateDescription() =>
 @"
 Vous sortez et vous vous retrouvez dans un endroit plongé dans l'ombre illuminé
-que part la lumière bleuté de congélateur.
-Vous pouvez percevoir quelque étagère semblable à celle qu'on pourrait retrouver
+que part la lumière bleuté des congélateurs plus loin.
+Vous pouvez percevoir quelques étagères semblables à celles qu'on pourrait retrouver
 dans une épicerie, mais elles montent beaucoup plus haut que celles que vous connaissez.
 
-Vous allumez votre lampe de poche et observez la carte. Certaines zones semble avoir été encercler et noté.
-Vous pouvez allez à la [CAISSE], au [TÉLÉPHONE], à l'[ENTREPOT], à la [BOUCHERIE], dans le [CONGÉLATEUR]
-ou revenir dans le [PLACARD].
+Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
+endroit avec votre [CARTE].
 ";
 
         internal override void ReceiveChoice(string choice)
         {
             switch (choice)
             {
-                case "caisse":
-                    Game.Transition<Cashier>();
+                case "regarder":
+                    Console.WriteLine(
+@"Vous pouvez percevoir quelques étagères semblables à celles qu'on pourrait retrouver dans une
+épicerie, mais elles montent beaucoup plus haut que celles que vous connaissez. Le sol est
+carrelé et semble tâché et peu entretenue.
+
+Tout le reste est plonger dans le noir complet même avec votre lampe de poche en main.");
                     break;
 
-                case "téléphone":
-                    Game.Transition<Phone>();
+                case "inventaire":
+                    Game.Inventory();
                     break;
 
-                case "entrepot":
-                    Game.Transition<Backstore>();
-                    break;
-
-                case "boucherie":
-                    Game.Transition<Butchery>();
-                    break;
-
-                case "congélateur":
-                    Game.Transition<Freezer>();
-                    break;
-
-                case "placard":
-                    Game.Transition<Closet>();
+                case "carte":
+                    Game.MapDestination();
                     break;
 
                 default:

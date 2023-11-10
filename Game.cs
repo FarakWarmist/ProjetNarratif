@@ -50,6 +50,45 @@ namespace ProjetNarratif
             }
         }
 
+        internal static void Inventory()
+        {
+            Console.WriteLine(
+@"Vous avez :");
+            if (Closet.isKeyCollected)
+            {
+                Console.WriteLine("- [CLÉ DU PLACARD]");
+            }
+            if (Closet.isLogbookCollected)
+            {
+                Console.WriteLine("- [JOURNAL]");
+            }
+            if (Closet.isFlashlightCollected)
+            {
+                Console.WriteLine("- [LAMPE DE POCHE]");
+            }
+            if (Closet.isMapCollected)
+            {
+                Console.WriteLine("- [CARTE]");
+            }
+            if (Cashier.isCoinCollected)
+            {
+                Console.WriteLine("- [PIÈCE]");
+            }
+            if (Phone.isMetalBarCollected)
+            {
+                Console.WriteLine("- [TUYAU]");
+            }
+            if (Freezer.isMeatCollected)
+            {
+                Console.WriteLine("- [VIANDE]");
+            }
+            if (IntoFreezer.isLeadBullets)
+            {
+                Console.WriteLine("- [TUYAU]");
+            }
+
+        }
+
         internal static void MapDestination()
         {
             string ? toGo;
@@ -59,7 +98,7 @@ namespace ProjetNarratif
 
 Vous pouvez aller au [TÉLÉPHONE], à l'[ENTREPÔT], à la [BOUCHERIE], dans le [CONGÉLATEUR],
 au [PLACARD] ou rester à la [CAISSE].");
-            toGo = Console.ReadLine();
+            toGo = Console.ReadLine().ToLower();
 
             switch (toGo)
             {

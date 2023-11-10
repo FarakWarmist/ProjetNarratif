@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -58,6 +58,14 @@ Il commence à faire vraiment froid, il vaudrait mieux sortir avant qu'il soit t
                     getFrozen = 0;
                     break;
                 
+                case "inventaire":
+                    Game.Inventory();
+                    break;
+
+                case "carte":
+                    Game.MapDestination();
+                    break;
+
                 default:
                     Console.WriteLine("Commande invalide.");
                     break;
