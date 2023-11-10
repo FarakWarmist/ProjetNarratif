@@ -1,11 +1,10 @@
-using System;
+﻿using System;
 
 namespace ProjetNarratif.Rooms
 {
     internal class Phone : Room
     {
         int choseQuestionAnswer;
-        string toGo;
         int specialEvent = 0;
         bool eventHappen;
         bool isMetalBarCollected;
@@ -32,7 +31,7 @@ votre [CARTE].";
                               "d'un présentateur d'émission de radio",
                               "d'une jeune femme fatigué",};
 
-            string newVoice = voice[rdm.Next(voice.Length)];
+            
 
 
             switch (choice) 
@@ -248,6 +247,7 @@ Le sou ressort de la machine et vous la récupérez.");
                         }
                         else
                         {
+                            string newVoice = voice[rdm.Next(voice.Length)];
                             Console.WriteLine(
 @"
 Vous déposez la pièce dans la fente et décrochez le téléphone.
@@ -413,7 +413,23 @@ Mais tout ce que vous trouvez est cet [ARTICLE] d'une page de journal.");
 
                 case "article":
                     Console.WriteLine(
-@"");
+@"Vous prenez le vieux morceau de journal. Certaines parties sont déchirées ou illisibles,
+mais vous arrivez à lire ce qui suit :
+
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+09/24/83
+
+Une semaine s'est écoulée depuis la disparition des sept adolescents,
+les familles, des amis et les gens du quartier continuent de porter des
+fleurs devant le vieux magasin abandonné.
+
+Ce même magasin ou les sep... (la page est illisible)..., le 17 
+septembre dans le quarti... (la page est déchirée à partir de là).
+______________________________________________________________________
+
+« Une semaine ?! » vous pensez. Pourtant vous êtes sûr que vous y étiez il y a quelques heures,
+comment une semaine a bien pu s'écouler aussi rapidement ?! Vous devez sortir d'ici et le plus
+vite possible !");
                     break;
 
                 /*case "???":
