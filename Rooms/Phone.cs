@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace ProjetNarratif.Rooms
 {
@@ -7,12 +7,13 @@ namespace ProjetNarratif.Rooms
         int choseQuestionAnswer;
         int specialEvent = 0;
         bool eventHappen;
-        bool isMetalBarCollected;
-        bool alreadyTalk;
+        internal static bool isMetalBarCollected;
+        internal static bool alreadyTalk;
         Random rdm = new Random();
 
         internal override string CreateDescription() =>
-@"Vous arrivez à l'endroit indiqué sur la carte: un espace libre entouré par les étagères et où
+@"
+Vous arrivez à l'endroit indiqué sur la carte: un espace libre entouré par les étagères et où
 plusieurs [DÉTRITUS] sont éparpillés sur le sol. Un étrange [TÉLÉPHONE] fix se tient au beau
 milieu de se désordre.
 

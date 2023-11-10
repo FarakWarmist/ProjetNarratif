@@ -1,15 +1,13 @@
-namespace ProjetNarratif.Rooms
+﻿namespace ProjetNarratif.Rooms
 {
     internal class Cashier : Room
     {
         internal static bool alreadySeen;
         internal static bool lightsOn;
 
-        internal static bool isWalletCollected;
         internal static bool isCoinCollected;
 
         internal static string ? toDo;
-        internal static string ? toGo;
 
         internal override string CreateDescription() =>
 @"
@@ -34,12 +32,10 @@ endroit avec votre [CARTE].";
 Plus vous vous rapprochez, plus vous réalisez que la personne devant vous est un
 une personne semble avoir complètement désidraté.
 Vous remarquez qu'il porte un tablier écrit « Welcom to Olga's Meat Store.
-");
-                        Console.WriteLine(
-@"Vous vouillez ces poches de pantalon. Peut-être a-t-il quelque chose d'utile sur
+
+Vous vouillez ces poches de pantalon. Peut-être a-t-il quelque chose d'utile sur
 lui. Peut -être qu'avec de la chance il aura l'un de ces téléphone portalbe.
-Vous ne trouvez cependant que son [PORTEFEUILLE].");
-                        isWalletCollected = true;
+Vous ne trouvez rien malheureusement.");
                         alreadySeen = true;
                     }
                     else
