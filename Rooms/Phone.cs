@@ -35,21 +35,21 @@ votre [CARTE].";
 
 
             switch (choice) 
-                {
-                    case "téléphone":
+            {
+                case "téléphone":
 
-                        Console.WriteLine(
+                    Console.WriteLine(
 @"Le téléphone est relié par un vieux câble dont certains fils ressortent. Le câble est rattaché à
 une boîte de métal elle-même fixée à un poteau de métal planté au sol. La boîte semble très âgée,
 avec le métal qui a rouillé et la peinture jaune qui n'ait presque plus visible. À gauche du 
 téléphone se trouve un espace pour insérer une pièce de monnaie et un pavé numérique dont la
 moitié des boutons sont absents.");
 
-                        if (Cashier.isCoinCollected == true)
-                        {
-                        if (!alreadyTalk)
-                        {
-                            Console.WriteLine(
+                    if (Cashier.isCoinCollected == true)
+                    {
+                    if (!alreadyTalk)
+                    {
+                        Console.WriteLine(
 @"
 Vous y insérez la pièce et prenez le combiné...
 
@@ -68,34 +68,34 @@ RÉPONSES :
 2- Qui êtes-vous ?
 
 3- ...");
-                            choseQuestionAnswer = Convert.ToInt32(Console.ReadLine());
+                        choseQuestionAnswer = Convert.ToInt32(Console.ReadLine());
 
-                            Console.Clear();
-                            switch (choseQuestionAnswer)
-                            {
-                                case 1:
-                                    Console.WriteLine(
+                        Console.Clear();
+                        switch (choseQuestionAnswer)
+                        {
+                            case 1:
+                                Console.WriteLine(
 @"- « Bonjour petit, je suis BudZ ! J'imagine que tu as beaucoup de questions, mais ne t'inquiètes
   pas, je suis ici pour t'aider. »");
-                                    break;
+                                break;
 
-                                case 2:
-                                    Console.WriteLine(
+                            case 2:
+                                Console.WriteLine(
 @"- « Les 12 soient loués ! Je n'ai pas vraiment de nom, mais on m'appelle BudZ et je suis ici
   pour aider les gens comme toi qui finissent par se retrouver coincés dans ce genre d'endroit. »");
-                                    break;
+                                break;
 
-                                default:
-                                    Console.WriteLine(
+                            default:
+                                Console.WriteLine(
 @"- « J'imagine que tu dois avoir peur. Je comprends parfaitement. Cet endroit doit être assez
   disturbant de ton point de vue. Je sais aussi que d'entendre une voix à travers un téléphone
   qui ne devrait même plus marcher est tout aussi dérangeant. Mais ne t'en fais pas !
 
   Je suis Budz, et je suis là pour te sortir d'ici. »");
-                                    break;
-                            }
+                                break;
+                        }
 
-                            Console.WriteLine(
+                        Console.WriteLine(
 @"
 -------------------------------------------
 RÉPONSES :
@@ -105,40 +105,40 @@ RÉPONSES :
 2- Où suis-je ?
 
 3- ...");
-                            choseQuestionAnswer = Convert.ToInt32(Console.ReadLine());
+                        choseQuestionAnswer = Convert.ToInt32(Console.ReadLine());
 
-                            Console.Clear();
-                            switch (choseQuestionAnswer)
-                            {
-                                case 1:
-                                    Console.WriteLine(
+                        Console.Clear();
+                        switch (choseQuestionAnswer)
+                        {
+                            case 1:
+                                Console.WriteLine(
     @"- « Enchanté Hugo ! J'imagine que tu dois te demander où tu es. Malheureusement, tu n'es
   pas au meilleur endroit. Tu te trouves chez Mama Olga, ou plus précisément dans son magasin.
 
   La bonne nouvelle, c'est qu'elle est moins à l'affût lorsqu'elle est dans son magasin. Tu
   as donc une chance de t'en sortir... J'en ai déjà trop vu mourir, tu ne finiras pas comme
   eux. »");
-                                    break;
+                                break;
 
-                                case 2:
-                                    Console.WriteLine(
+                            case 2:
+                                Console.WriteLine(
     @"- « Tu es malheureusement chez l'une des plus dangereuses habitantes des Limbes : Mama Olga.
   Mais ne t'en fais pas petit ! Si tu suis mes conseils, tu t'en sortiras vivant... J'en ai déjà
   trop vu mourir. »");
-                                    break;
+                                break;
 
-                                default:
-                                    Console.WriteLine(
+                            default:
+                                Console.WriteLine(
     @"- « Je comprends, difficile de faire confiance dans un endroit pareil. Mais sans mon aide,
   Mama Olga te transformera en nourriture comme les produits que tu peux voir autour de toi !
   Alors s'il te plaît, écoute ce que j'ai à te dire... J'en ai déjà trop vu mourir, je ne veux
   pas que tu finisses comme eux. »");
-                                    break;
-                            }
+                                break;
+                        }
 
-                            do
-                            {
-                                Console.WriteLine(
+                        do
+                        {
+                            Console.WriteLine(
 @"
 -------------------------------------------
 QUESTIONS :
@@ -154,13 +154,13 @@ QUESTIONS :
 5- À qui appartient ce journal ?
 
 6- J'y vais !");
-                                choseQuestionAnswer = Convert.ToInt32(Console.ReadLine());
+                            choseQuestionAnswer = Convert.ToInt32(Console.ReadLine());
 
-                                Console.Clear();
-                                switch (choseQuestionAnswer)
-                                {
-                                    case 1:
-                                        Console.WriteLine(
+                            Console.Clear();
+                            switch (choseQuestionAnswer)
+                            {
+                                case 1:
+                                    Console.WriteLine(
 @"- « Pour te sortir d'ici, il faut que tu te rendes dans l'entrepôt du magasin. Tu pourras y
   accèder en passant par le congélateur. Mais il te faudra avant tout la clé pour le cadenas qui
   maintient la porte de l'entrepôt scellé. Elle devrait se trouver sur le trousseau de clés dans
@@ -173,10 +173,10 @@ QUESTIONS :
   de les occuper s'ils venaient à te barrer la route.
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    case 2:
-                                        Console.WriteLine(
+                                case 2:
+                                    Console.WriteLine(
 @"- « Je ne la connais pas vraiment personnellement, mais je sais qu'elle est une des plus
   dangereuses personnes de tous les Limbes. Elle était humaine avant, mais j'ignore ce qui a bien
   pu lui arriver pour qu'elle finisse ainsi. Cet endroit peut faire ressortir ce qu'il a de plus
@@ -189,10 +189,10 @@ QUESTIONS :
   ... J'ai l'impression que je viens de te donner un gros coup de stress sans le vouloir...
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    case 3:
-                                        Console.WriteLine(
+                                case 3:
+                                    Console.WriteLine(
 @"- « Je suis ici depuis bien plus longtemps que tu pourrais le croire. Tu n'es pas le premier à
   arriver ici, et il y a d'autres qui sont dans des situations bien pire que la tienne. Parfois, il
   est possible de les sauver, mais la majeure partie du temps, je ne peux que les accompagner dans
@@ -202,10 +202,10 @@ QUESTIONS :
   sortes vivant !
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    case 4:
-                                        Console.WriteLine(
+                                case 4:
+                                    Console.WriteLine(
 @"- « Ça arrive de temps en temps que des humains ou des animaux finissent par arriver dans les
   Limbes, surtout depuis le Grand Buffet - crois-moi, tu ne veux pas que je te raconte cette
   histoire.
@@ -219,10 +219,10 @@ QUESTIONS :
   Ça, je n'en sais rien.
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    case 5:
-                                        Console.WriteLine(
+                                case 5:
+                                    Console.WriteLine(
 @"- « Un journal ?... Ho ! Le journal ! Si c'est bien ce que je pense, garde le précieusement, il
   t'aidera !
 
@@ -230,25 +230,25 @@ QUESTIONS :
   ici... Il a finalement eu raison de le faire.
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    default:
-                                        break;
-                                }
-                            } while (choseQuestionAnswer < 5);
-                            Console.WriteLine(
+                                default:
+                                    break;
+                            }
+                        } while (choseQuestionAnswer < 5);
+                        Console.WriteLine(
 @"- « Très bien ! Si tu as besoin de moi, utilise ce téléphone et je te répondrais aussitôt !
 
   Fais attention à toi ! »
 
 Le sou ressort de la machine et vous la récupérez.");
-                            specialEvent++;
-                            alreadyTalk = true;
-                        }
-                        else
-                        {
-                            string newVoice = voice[rdm.Next(voice.Length)];
-                            Console.WriteLine(
+                        specialEvent++;
+                        alreadyTalk = true;
+                    }
+                    else
+                    {
+                        string newVoice = voice[rdm.Next(voice.Length)];
+                        Console.WriteLine(
 @"
 Vous déposez la pièce dans la fente et décrochez le téléphone.
 
@@ -259,11 +259,11 @@ vous entendez sonne comme celle " + newVoice + @".
 
 - « Avais-tu d'autre questions ? »");
 
-                            choseQuestionAnswer = 0;
+                        choseQuestionAnswer = 0;
 
-                            do
-                            {
-                                Console.WriteLine(
+                        do
+                        {
+                            Console.WriteLine(
 @"
 -------------------------------------------
 QUESTIONS :
@@ -281,11 +281,11 @@ QUESTIONS :
 6- À qui appartient ce journal ?
 
 7- J'y vais !");
-                                choseQuestionAnswer = Convert.ToInt32(Console.ReadLine());
-                                switch (choseQuestionAnswer)
-                                {
-                                    case 1:
-                                        Console.WriteLine(
+                            choseQuestionAnswer = Convert.ToInt32(Console.ReadLine());
+                            switch (choseQuestionAnswer)
+                            {
+                                case 1:
+                                    Console.WriteLine(
 @"- « J'imagine que tu fais référence à ma voix, mais oui, c'est bien moi.
 
   Pour une raison que j'ignore, lorsque quelqu'un démarre une nouvelle conversation avec moi, il aura
@@ -293,10 +293,10 @@ QUESTIONS :
   d'avoir la même voix que d'habitude... Tu vas t'y faire.
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    case 2:
-                                        Console.WriteLine(
+                                case 2:
+                                    Console.WriteLine(
 @"- « Pour te sortir d'ici, il faut que tu te rendes dans l'entrepôt du magasin. Tu pourras y
   accèder en passant par le congélateur. Mais il te faudra avant tout la clé pour le cadenas qui
   maintient la porte de l'entrepôt scellé. Elle devrait se trouver sur le trousseau de clés dans
@@ -309,10 +309,10 @@ QUESTIONS :
   de les occuper s'ils venaient à te barrer la route.
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    case 3:
-                                        Console.WriteLine(
+                                case 3:
+                                    Console.WriteLine(
 @"- « Je ne la connais pas vraiment personnellement, mais je sais qu'elle est une des plus
   dangereuses personnes de tous les Limbes. Elle était humaine avant, mais j'ignore ce qui a bien
   pu lui arriver pour qu'elle finisse ainsi. Cet endroit peut faire ressortir ce qu'il a de plus
@@ -325,10 +325,10 @@ QUESTIONS :
   ... J'ai l'impression que je viens de te donner un gros coup de stress sans le vouloir...
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    case 4:
-                                        Console.WriteLine(
+                                case 4:
+                                    Console.WriteLine(
 @"- « Je suis ici depuis bien plus longtemps que tu pourrais le croire. Tu n'es pas le premier à
   arriver ici, et il y a d'autres qui sont dans des situations bien pire que la tienne. Parfois, il
   est possible de les sauver, mais la majeure partie du temps, je ne peux que les accompagner dans
@@ -338,10 +338,10 @@ QUESTIONS :
   sortes vivant !
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    case 5:
-                                        Console.WriteLine(
+                                case 5:
+                                    Console.WriteLine(
 @"- « Ça arrive de temps en temps que des humains ou des animaux finissent par arriver dans les
   Limbes, surtout depuis le Grand Buffet - crois-moi, tu ne veux pas que je te raconte cette
   histoire.
@@ -355,10 +355,10 @@ QUESTIONS :
   Ça, je n'en sais rien.
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    case 6:
-                                        Console.WriteLine(
+                                case 6:
+                                    Console.WriteLine(
 @"- « Un journal ?... Ho ! Le journal ! Si c'est bien ce que je pense, garde le précieusement, il
   t'aidera !
 
@@ -366,21 +366,21 @@ QUESTIONS :
   ici... Il a finalement eu raison de le faire.
 
   As-tu d'autres questions ? »");
-                                        break;
+                                    break;
 
-                                    default:
-                                        break;
-                                }
+                                default:
+                                    break;
+                            }
 
-                                Console.Clear();
-                            } while (choseQuestionAnswer < 6);
-                            Console.WriteLine(
+                            Console.Clear();
+                        } while (choseQuestionAnswer < 6);
+                        Console.WriteLine(
 @"- « Très bien ! Reste sur tes garde et fais attention à toi ! »
 
 Le sou ressort de la machine et vous la récupérez.");
-                            specialEvent++;
-                        }
+                        specialEvent++;
                     }
+                }
                     break;
 
                 case "détritus":
@@ -442,6 +442,16 @@ vite possible !");
                         Console.WriteLine("Commande invalide.");
                     }
                     break;*/
+
+                case "regarder":
+                    Console.WriteLine(
+@"Vous regardez les étagères et, même si certains sont presque drôles comme « La poudre d'os »
+montrant un squelette cartoonesque faire un gâteau, vous êtes rapidement teriffié en regardant
+les autres produits : « Majeur au vinaigre », « Œil à l'ail », « Biceps séché », « Cervelle en
+conserve »...
+
+Vous savez au fond de vous que c'est ce qui vous attend si vous ne partez pas vite d'ici.");
+                    break;
 
                 case "carte":
                     Game.MapDestination();
