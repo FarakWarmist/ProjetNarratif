@@ -7,7 +7,8 @@
         internal static bool isFlashlightCollected;
         internal static bool isMapCollected;
         internal static bool isDoorUnlocked;
-        internal static string toDo;
+        internal static string ? toDo;
+        internal static bool alreadyExit;
 
         internal override string CreateDescription() =>
 @"
@@ -112,6 +113,7 @@ La [PORTE] est maintenant déverrouillez.");
                             else
                             {
                                 Game.Transition<OutCloset>();
+                                alreadyExit = true;
                             }
                         }
                     }
@@ -162,8 +164,9 @@ La [PORTE] est maintenant déverrouillez.");
                         Console.WriteLine(
 @"
 [LAMPE DE POCHE] rajouté à votre inventaire.");
-                    }
                     isFlashlightCollected = true;
+                    }
+                    
                     break;
 
                 case "carte":
@@ -173,7 +176,14 @@ La [PORTE] est maintenant déverrouillez.");
                     }
                     else
                     {
-                        Console.WriteLine("Vous observez la carte. Certaines zones sembles avoir été encerclés et notés.");
+                        if (!alreadyExit)
+                        {
+                            Console.WriteLine("Vous observez la carte. Certaines zones sembles avoir été encerclés et notés.");
+                        }
+                        else
+                        {
+                            Game.MapDestination();
+                        }
                     }
                     break;
 
