@@ -82,7 +82,7 @@ namespace ProjetNarratif
             {
                 Console.WriteLine("- [VIANDE]");
             }
-            if (IntoFreezer.isLeadBullets)
+            if (IntoFreezer.isLeadBulletsCollected)
             {
                 Console.WriteLine("- [TUYAU]");
             }

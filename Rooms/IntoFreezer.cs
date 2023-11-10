@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +9,10 @@ namespace ProjetNarratif.Rooms
     internal class IntoFreezer : Room
     {
         int getFrozen;
-        string warning;
+        string ? warning;
+
+        internal static bool isLeadBulletsCollected;
+
         internal override string CreateDescription() =>
 @"";
 
