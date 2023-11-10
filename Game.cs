@@ -49,5 +49,48 @@ namespace ProjetNarratif
                 }
             }
         }
+
+        internal static void MapDestination()
+        {
+            string ? toGo;
+            Console.Clear();
+            Console.WriteLine(
+@"Où voulez-vous allez?
+
+Vous pouvez aller au [TÉLÉPHONE], à l'[ENTREPÔT], à la [BOUCHERIE], dans le [CONGÉLATEUR],
+au [PLACARD] ou rester à la [CAISSE].");
+            toGo = Console.ReadLine();
+
+            switch (toGo)
+            {
+                case "caisse":
+                    Game.Transition<Cashier>();
+                    break;
+
+                case "téléphone":
+                    Game.Transition<Phone>();
+                    break;
+
+                case "entrepôt":
+                    Game.Transition<Backstore>();
+                    break;
+
+                case "boucherie":
+                    Game.Transition<Butchery>();
+                    break;
+
+                case "congélateur":
+                    Game.Transition<Freezer>();
+                    break;
+
+                case "placard":
+                    Game.Transition<Closet>();
+                    break;
+
+                default:
+                    Console.WriteLine("Commande invalide.");
+                    break;
+            }
+        }
     }
 }
