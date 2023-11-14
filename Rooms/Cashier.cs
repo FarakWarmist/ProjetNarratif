@@ -12,7 +12,7 @@
         internal override string CreateDescription() =>
 @"
 Vous arrivez à la zone des caisses, et il y a effectivement 3 caisses semblable à
-ceux qu'on retrouve dans les magazins aujourd'hui.
+ceux qu'on retrouve dans les magazins d'aujourd'hui.
 Il semble avoir une [PERSONNE] derrière la caisse du milieu.
 Tout au fond, vous pouvez voir dans le coin une immense [PORTE].
 La première [CAISSE] attire aussi votre attention.
@@ -28,13 +28,13 @@ endroit avec votre [CARTE].";
                     if (!alreadySeen) 
                     {
                         Console.WriteLine(
-@"Vous vous rapprochez de la personne.
-Plus vous vous rapprochez, plus vous réalisez que la personne devant vous est un
-une personne semble avoir complètement désidraté.
-Vous remarquez qu'il porte un tablier écrit « Welcom to Olga's Meat Store.
+@"Vous vous approchez la personne.
+Plus vous vous rapprochez, plus vous réalisez que la personne devant vous est un corps dont la
+mort semble être une sévère déshydratation.
+Vous remarquez qu'il porte un tablier écrit « Welcom to Olga's Meat Store ».
 
-Vous vouillez ces poches de pantalon. Peut-être a-t-il quelque chose d'utile sur
-lui. Peut -être qu'avec de la chance il aura l'un de ces téléphone portalbe.
+Vous fouillez ces poches de pantalon. Peut-être a-t-il quelque chose d'utile sur
+lui. Peut-être qu'avec de la chance, il aura l'un de ces téléphones portalbes.
 Vous ne trouvez rien malheureusement.");
                         alreadySeen = true;
                     }
@@ -45,27 +45,26 @@ Vous ne trouvez rien malheureusement.");
                     break;
 
                 case "porte":
+
+                    Console.WriteLine(
+@"Vous marchez jusqu'à la porte.
+
+La porte ressemble à l'une de ces portes coulissantes automatiques qu'on retrouve à
+l'entrée de certains magasins. Mais celles-ci ne sont fait que de métal rouillé avec
+aucune fenêtre pour voir ce qu'il y a de l'autre côté.");
+
                     if (!lightsOn)
                     {
                         Console.WriteLine(
-@"Vous marcher jusqu'à la porte.
-La porte ressemble à l'une de ses porte coulissante automatique qu'on retrouve à
-l'entrez de certain magazin. Mais celle-ci n'est fait que de métal rouilloué avec
-aucune fenêtre pour voir ce qu'il y a de l'autre côté.
-
-Vous décider de revenir proche des caisse.");
+@"
+Vous décidez de revenir proche des caisses.");
                     }
                     else
                     {
                         Console.WriteLine(
-@"Vous marcher jusqu'à la porte.
-La porte ressemble à l'une de ses porte coulissante automatique qu'on retrouve à
-l'entrez de certain magazin. Mais celle-ci n'est fait que de métal rouilloué avec
-aucune fenêtre pour voir ce qu'il y a de l'autre côté.
-
-Vous essayez de faire réagir la porte.
-Après tout cette chose à pus la passer, mais rien n'y fait. Il va faloir trouvez un
-autre moyen pour sortir d'ici.");
+@"
+Vous essayez de faire réagir la porte, mais rien n'y fait. Il va falloir trouver un
+autre moyen pour sortir.");
                     }
                     break;
 
@@ -73,9 +72,10 @@ autre moyen pour sortir d'ici.");
                     if (!lightsOn)
                     {
                         Console.WriteLine(
-@"Vous trouvez à la caisse une pièce de monnaie.
+@"Vous arrivez à ouvrir une des caisses. À l'intérieur, se trouve une seule pièce de
+monnaie.
 
-Voulez vous la prendre?
+Voulez-vous prendre la [PIÈCE]?
 [OUI] ou [NON]");
                         toDo = Console.ReadLine().ToLower();
                         if (toDo == "oui") 
@@ -87,27 +87,29 @@ Voulez vous la prendre?
                         else
                         {
                             Console.WriteLine(
-@"Vous n'ête pas interessez et laissez la pièce là où elle est.");
+@"Vous n'êtes pas interessez et laissez la pièce dans la caisse.");
                         }
                     }
                     else
                     {
                         Console.WriteLine(
-@"");
+@"Une pièce de monnaie égratignée et très usée");
                     }
                     break;
 
                 case "regarder":
-                    if (!lightsOn)
-                    {
-                        Console.WriteLine(
-@"");
-                    }
-                    else
-                    {
-                        Console.WriteLine(
-@"");
-                    }
+
+                    Console.WriteLine(
+@"Vous observez les alentours.
+
+Quelque chose vous dérange dans la manière dont sont faites les caisses. Elles ressemblent
+aux caisses modernes, et pourtant, elles sont complètement rouillées et abandonnées depuis
+sûrement plusieurs années ! Et la façon dont ils sont construits, on dirait que se sont que
+des répliques");
+                    break;
+
+                case "journal":
+                    Game.Journal();
                     break;
 
                 case "inventaire":
@@ -116,6 +118,10 @@ Voulez vous la prendre?
 
                 case "carte":
                     Game.MapDestination();
+                    break;
+
+                default:
+                    Console.WriteLine("Commande invalide.");
                     break;
 
 
