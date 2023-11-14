@@ -190,8 +190,8 @@ Le trousseau est encerclé et une flèche pointe un cadenas bleu et blanc.");
             Console.WriteLine(
 @"Où voulez-vous allez?
 
-Vous pouvez aller au [TÉLÉPHONE], à l'[ENTREPÔT], à la [BOUCHERIE], dans le [CONGÉLATEUR],
-au [PLACARD] ou rester à la [CAISSE].");
+Vous pouvez aller au [TÉLÉPHONE], à la [BOUCHERIE], dans le [CONGÉLATEUR],
+au [PLACARD] ou la [CAISSE].");
             toGo = Console.ReadLine().ToLower();
 
             switch (toGo)
