@@ -1,4 +1,4 @@
-﻿namespace ProjetNarratif.Rooms
+namespace ProjetNarratif.Rooms
 {
     internal class Freezer : Room
     {
@@ -56,6 +56,10 @@ resortez un avant bras, ce qui vous lève le cœur, mais vous prenez sur vous. P
 que ça vous sera utile.
 
 [VIANDE] rajoutée à votre inventaire.");
+                    break;
+
+                case "journal":
+                    Game.Journal();
                     break;
 
                 case "inventaire":

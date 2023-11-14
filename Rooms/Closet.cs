@@ -1,4 +1,4 @@
-﻿namespace ProjetNarratif.Rooms
+namespace ProjetNarratif.Rooms
 {
     internal class Closet : Room
     {
@@ -151,8 +151,7 @@ La [PORTE] est maintenant déverrouillez.");
                     }
                     else
                     {
-                        Console.WriteLine(
-@"");
+                        Game.Journal();
                     }
                     break;
 

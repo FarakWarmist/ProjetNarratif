@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ProjetNarratif.Rooms
 {
@@ -453,6 +453,10 @@ les autres produits : « Majeur au vinaigre », « Œil à l'ail », « Biceps s
 conserve »...
 
 Vous savez au fond de vous que c'est ce qui vous attend si vous ne partez pas vite d'ici.");
+                    break;
+
+                case "journal":
+                    Game.Journal();
                     break;
 
                 case "inventaire":

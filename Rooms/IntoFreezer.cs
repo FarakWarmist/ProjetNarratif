@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -61,6 +61,10 @@ Il commence à faire vraiment froid, il vaudrait mieux sortir avant qu'il soit t
                     getFrozen = 0;
                     break;
                 
+                case "journal":
+                    Game.Journal();
+                    break;
+
                 case "inventaire":
                     Game.Inventory();
                     break;
