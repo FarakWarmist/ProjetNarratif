@@ -16,11 +16,6 @@ game.Add(new Backstore());
 game.Add(new Butchery());
 
 
-game.Add(new Bedroom());
-game.Add(new Bathroom());
-game.Add(new AtticRoom());
-game.Add(new LivingRoom());
-
 while (!game.IsGameOver())
 {
     Console.WriteLine("--");
