@@ -107,8 +107,16 @@ Voulez-vous passer la porte?
                         }
                         else
                         {
+                            if (!Cashier.lightsOn)
+                            {
                                 Game.Transition<OutCloset>();
                                 alreadyExit = true;
+                            }
+                            else
+                            {
+                                Game.MapDestination();
+                            }
+
                         }
                     }
                     break;
