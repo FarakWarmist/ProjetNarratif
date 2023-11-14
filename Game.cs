@@ -173,7 +173,11 @@ Le trousseau est encerclé et une flèche pointe un cadenas bleu et blanc.");
             }
             if (IntoFreezer.isLeadBulletsCollected)
             {
-                Console.WriteLine("- [TUYAU]");
+                Console.WriteLine("- [BALLES EN PLOMB]");
+            }
+            if (Butchery.isBunchOfKeysCollected)
+            {
+                Console.WriteLine("- [TROUSSEAU DE CLÉS]");
             }
 
         }
