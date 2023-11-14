@@ -1,4 +1,4 @@
-﻿using ProjetNarratif;
+using ProjetNarratif;
 using ProjetNarratif.Rooms;
 
 var game = new Game();
@@ -6,7 +6,6 @@ var game = new Game();
 game.Add(new Introduction());
 game.Add(new Closet());
     game.Add(new OutCloset());
-        game.Add(new OutClosetLackOfEquip());
 game.Add(new Cashier());
     game.Add(new MamaOlgaIsHere());
 game.Add(new Freezer());
