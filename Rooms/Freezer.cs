@@ -1,4 +1,4 @@
-namespace ProjetNarratif.Rooms
+﻿namespace ProjetNarratif.Rooms
 {
     internal class Freezer : Room
     {
@@ -6,10 +6,10 @@ namespace ProjetNarratif.Rooms
 
         internal override string CreateDescription() =>
 @"
-L'air est plus frais ici. Plusieurs congélateurs vitrée son placer pour présenter
-divers produit que vous ne pouvez pas voir d'ici.
-Au mur se trouve une grande [PORTE] coullissante dont de l'air froid s'en échape, créamt
-une brûme toute autour.
+L'air est plus frais par ici. Plusieurs congélateurs vitrés sont placés pour présenter
+divers produits que vous n'arrivez pas à voir d'ici.
+Au mur, se trouve une grande [PORTE] coulissante dont de l'air froid s'en échappe, créant
+une épaisse brume toute autour.
 
 Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
 endroit avec votre [CARTE].
@@ -24,11 +24,11 @@ endroit avec votre [CARTE].
                     if (!Cashier.lightsOn)
                     {
                         Console.WriteLine(
-@"Vous essayer de poussez la porte, mais elle semble coincée. En obscervant bien, vous
-remarquer que la porte est lié à un méchanisme dont des cable y sont rattachés.
+@"Vous essayez de pousser la porte, mais elle semble coincée. En observant bien, vous
+remarquez que la porte est liée à un mécanisme dont des câbles y sont rattachés.
 
-Peut-être que la porte ne souvre pas sans électricité. Vous devez trouvez un moyen de
-ramenez le courant.");
+Peut-être que la porte ne s'ouvre pas sans électricité. Vous devez trouver un moyen de
+ramener le courant.");
                     }
                     else
                     {
@@ -38,22 +38,22 @@ ramenez le courant.");
 
                 case "regarder":
                     Console.WriteLine(
-@"Vous vous rapprochez pour observer de plus prêt ce qu'il y a dans ces congélateurs.
-Après avoir frotté la bué sur une des vitre, vous le regrettez instantanément.
+@"Vous vous rapprochez pour observer de plus près ce qu'il y a dans ces congélateurs.
+Après avoir frotté la buer sur une des vitres, vous le regrettez instantanément.
 Vous pouvez voir un homme gelé affichant une expression de peur. La surprise vous fait
 tomber par terre. 
 
-Vous vous relevez et aller voir dans un des plus petit congélateur. Des morceaux de
-[VIANDE] humaines découper en différente parties sont empiler dedans. 
+Vous vous relevez et allez voir dans un des plus petits congélateurs. Des morceaux de
+[VIANDE] humains découpés en différentes parties sont empilés à l'intérieur. 
 
-Dans quel genre d'endroit êtes-vous tombé?");
+Dans quel genre d'endroit êtes-vous tombé ?");
                     break;
 
                 case "viande":
                     Console.WriteLine(
-@"Vous décidez d'ouvrir un des congélateur et de prendre un de viande au hazard. Vous
-resortez un avant bras, ce qui vous lève le cœur, mais vous prenez sur vous. Peut-être
-que ça vous sera utile.
+@"Vous décidez d'ouvrir un des congélateurs et de prendre un des morceaux de viande au hasard.
+Vous ressortez un sac écrit « Quarts d'Avant-Bras », ce qui vous lève le cœur, mais vous
+prenez sur vous. Peut-être que ça vous sera utile.
 
 [VIANDE] rajoutée à votre inventaire.");
                     break;
