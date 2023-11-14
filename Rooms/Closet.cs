@@ -95,16 +95,8 @@ Voulez-vous passer la porte?
                             toDo = Console.ReadLine().ToLower();
                             if (toDo == "oui")
                             {
-                                if (!isFlashlightCollected == true || !isMapCollected == true)
-                                {
-                                    Console.Clear();
-                                    Game.Transition<OutClosetLackOfEquip>();
-                                }
-                                else
-                                {
-                                    Console.Clear();
-                                    Game.Transition<OutCloset>();
-                                }
+                                Console.Clear();
+                                Game.Transition<OutCloset>();
                             }
                             else
                             {
@@ -115,15 +107,8 @@ Voulez-vous passer la porte?
                         }
                         else
                         {
-                            if (!isFlashlightCollected == true || !isMapCollected == true)
-                            {
-                                Game.Transition<OutClosetLackOfEquip>();
-                            }
-                            else
-                            {
                                 Game.Transition<OutCloset>();
                                 alreadyExit = true;
-                            }
                         }
                     }
                     break;
