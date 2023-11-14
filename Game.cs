@@ -203,10 +203,6 @@ au [PLACARD] ou rester à la [CAISSE].");
                     Game.Transition<Phone>();
                     break;
 
-                case "entrepôt":
-                    Game.Transition<Backstore>();
-                    break;
-
                 case "boucherie":
                     Game.Transition<Butchery>();
                     break;
