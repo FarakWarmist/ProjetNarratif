@@ -1,4 +1,4 @@
-namespace ProjetNarratif.Rooms
+﻿namespace ProjetNarratif.Rooms
 {
     internal class Closet : Room
     {
@@ -12,9 +12,9 @@ namespace ProjetNarratif.Rooms
 
         internal override string CreateDescription() =>
 @"
-L'odeur de fer et de moisie ajouté avec l'humidité dans la pièce vous donne mal au cœur.
-La pièce est petite et remplie de tuyaux qui fuite. Le silence est remplie par un bruit de
-moteur étouffé et par la seule ampoule qui clignote sans cesse acrochez au plafond.
+Une odeur de fer et de moisie, ajouté avec l'humidité dans la pièce vous donne mal au cœur.
+La pièce est petite et remplie de tuyaux qui fuitent. Le silence est rempli par un bruit de
+moteur étouffé et par la seule ampoule qui clignote sans cesse accroché au plafond.
 Un gros [TAS DE LINGE] mouillés se trouve au fond de la pièce, une boîte de [DISJONCTEUR] et
 une [PORTE].
 
@@ -37,11 +37,21 @@ Voulez-vous fouillez dans le tas de linge?
                     {
                         case "oui":
                             Console.WriteLine(
-@"En dépit de l'odeur, vous prenez sur vous et vous plongez plein bras dans le tas de linges.
-Après un moment à chercher, vous trouvez une clé en bronze.
+@"En dépit de l'odeur, vous prenez sur vous et vous plongez plein bras dans le tas de linges");
+                            if (!isKeyCollected)
+                            {
+                                Console.WriteLine(
+@"Après un moment à chercher, vous trouvez une clé en bronze.
 
 [CLÉ DU PLACARD] rajouté à votre inventaire.");
-                            isKeyCollected = true;
+                                isKeyCollected = true;
+                            }
+                            else
+                            {
+                                Console.WriteLine(
+@"Mais après un moment à chercher, vous ne trouvez rien d'autre que du vieux linges humide et
+puant.");
+                            }
                             break;
 
                         case "non":
@@ -56,7 +66,7 @@ Après un moment à chercher, vous trouvez une clé en bronze.
 
                 case "disjoncteur":
                     Console.WriteLine(
-@"Vous ouvez la boîte de disjoncteurs et réalisez avec horreur que la boîte est remplie de
+@"Vous ouvrez la boîte de disjoncteurs et réalisez avec horreur que la boîte est remplie de
 chaire pulsante.
 Vous refermez immédiatement la boîte et essayez d'oublier ce que vous venez de voir.");
                     break;
@@ -77,11 +87,10 @@ Peut-être y a-t-il une clé cachée dans le coin.");
                             Console.WriteLine(
 @"Vous rentrer la clé dans la serrure de la porte et tourner la clé et la déverrouillez.
 
-La [PORTE] est maintenant déverrouillez.");
-                            Console.WriteLine(
-@"Voulez-vous passer la porte?
+La [PORTE] est maintenant déverrouillez.
 
-[OUI] ou [NON]?
+Voulez-vous passer la porte?
+[OUI] | [NON]
 ");
                             toDo = Console.ReadLine().ToLower();
                             if (toDo == "oui")
