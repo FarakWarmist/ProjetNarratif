@@ -204,7 +204,23 @@ au [PLACARD] ou rester à la [CAISSE].");
                     break;
 
                 case "boucherie":
-                    Game.Transition<Butchery>();
+                    if (!Cashier.lightsOn)
+                    {
+                        Console.WriteLine(
+@"La boucherie est fermée. Vous revenez sur vos pas.");
+                    }
+                    else
+                    {
+                        if (!Butchery.noMoreBuchery)
+                        {
+                            Game.Transition<Butchery>();
+                        }
+                        else
+                        {
+                            Console.WriteLine(
+@"Après ce qui c'est passez, vous ne voulez pas retourner là-bas.");
+                        }
+                    }
                     break;
 
                 case "congélateur":
