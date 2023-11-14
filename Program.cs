@@ -2,6 +2,7 @@
 using ProjetNarratif.Rooms;
 
 var game = new Game();
+
 game.Add(new Introduction());
 game.Add(new Closet());
     game.Add(new OutCloset());
@@ -12,6 +13,7 @@ game.Add(new Freezer());
     game.Add(new IntoFreezer());
 game.Add(new Phone());
 game.Add(new Backstore());
+    game.Add(new BackstoreWithDogs());
 game.Add(new Butchery());
 
 
