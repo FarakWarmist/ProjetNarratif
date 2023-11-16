@@ -1,4 +1,4 @@
-namespace ProjetNarratif.Rooms
+﻿namespace ProjetNarratif.Rooms
 {
     internal class Freezer : Room
     {
@@ -32,6 +32,9 @@ ramener le courant.");
                     }
                     else
                     {
+                        Console.WriteLine(
+@"Vous ouvrez la grande porte coulissante et êtes accueilli par un terible vent glacé.
+");
                         Game.Transition<IntoFreezer>();
                     }
                     break;

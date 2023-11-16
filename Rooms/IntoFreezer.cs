@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,9 +18,9 @@ namespace ProjetNarratif.Rooms
 
         internal override string CreateDescription() =>
 @"
-Vous ouvrez la grande porte coulissante et êtes acceuilli par une terible vent glacé. Vous
-savez que restez dans cette chambre froide quelques minutes suffira à vous paralyser de
-froid.
+Vous pouvez voir des tables en métal dont une avec un [CORPS] dessus. Des morceaux de
+partie humaine, et d'autres non-humains, sont suspendus au plafond par des crochets.Au fond
+de la pièce, vous apercevez une [PORTE GELÉE] avec un gros [CADENAS] qui le maintient
 
 Vous pouvez voir des table en métale dont une avec un [CORPS] dessus. Des morceaux de partie
 humaine, et d'autre non-humain, sont suspendu au plafond par des crochets.Au fond de la
@@ -28,6 +28,9 @@ pièce, vous appercevez une [PORTE GELÉE] avec un gros [CADENAS] qui le maintie
 
 Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
 endroit avec votre [CARTE].
+
+Vous savez que rester dans cette chambre froide quelques minutes suffira à vous paralyser de
+froid.
 ";
 
         internal override void ReceiveChoice(string choice)
