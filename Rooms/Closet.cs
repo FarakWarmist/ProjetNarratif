@@ -28,7 +28,9 @@ Vous pouvez [REGARDER] les alentours ou regarder votre [INVENTAIRE].
                 case "tas de linge":
                     Console.WriteLine(
 @"Vous vous raprochez le tas de linges et remarquez que l'odeur de moisie devient plus fort.
+
 Voulez-vous fouillez dans le tas de linge?
+[OUI] | [NON]
 ");
                     toDo = Console.ReadLine().ToLower();
                     Console.Clear();

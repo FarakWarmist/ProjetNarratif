@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -99,8 +99,20 @@ La dernière chose que vous voyez, est le hachoire s'enfonçant
 dans votre tête.
 
 VOUS ÊTES MORT
+
+___________________________
+Voulez-vous revenir en arrière ?
+[OUI] | [NON]
 ");
-                    Game.Finish();
+                    toDo = Console.ReadLine().ToLower();
+                    if (toDo != "non")
+                    {
+                        Game.Transition<Cashier>();
+                    }
+                    else
+                    {
+                        Game.Finish();
+                    }
                     break;
 
                 default:
