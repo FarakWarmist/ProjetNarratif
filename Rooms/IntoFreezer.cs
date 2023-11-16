@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,10 +21,7 @@ namespace ProjetNarratif.Rooms
 Vous pouvez voir des tables en métal dont une avec un [CORPS] dessus. Des morceaux de
 partie humaine, et d'autres non-humains, sont suspendus au plafond par des crochets.Au fond
 de la pièce, vous apercevez une [PORTE GELÉE] avec un gros [CADENAS] qui le maintient
-
-Vous pouvez voir des table en métale dont une avec un [CORPS] dessus. Des morceaux de partie
-humaine, et d'autre non-humain, sont suspendu au plafond par des crochets.Au fond de la
-pièce, vous appercevez une [PORTE GELÉE] avec un gros [CADENAS] qui le maintient fermée. 
+fermée.
 
 Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
 endroit avec votre [CARTE].
@@ -51,8 +48,8 @@ Il commence à faire vraiment froid, il vaudrait mieux sortir avant qu'il soit t
                 Console.Clear();
                 Console.WriteLine(
 @"Vous ne sentez plus vos mains.
-Vos jambes refuse de bouger.
-Vous pouvez voir vos yeux se cristalisé.
+Vos jambes refusent de bouger.
+Vous pouvez voir vos yeux se cristalliser.
 
 Le froid a eu le dessus sur vous.
 
@@ -68,16 +65,16 @@ VOUS ÊTES MORT
                     Console.WriteLine(
 @"Vous allez vers le corps.
 
-Le cadavre est étandus dos à la table et n'est vétu que d'un linge qui couvre le bas de
-son corps. Son torse a été soigneusement ouvert et est totalement creux.Une épaisse
-fante sépare presque en deux sa tête de haut en bas. Un de ses bras semble en mauvais état,
-ressemblant à un crayon qu'on aurait trop machouillé.");
+Le cadavre est étendu dos à la table et n'est vêtu que d'un linge qui couvre le bas de
+son corps. Son torse a été soigneusement ouvert et est totalement creux. Une épaisse
+fente sépare presque en deux sa tête de haut en bas. Un de ses bras semble en mauvais état,
+ressemblant à un crayon qu'on aurait trop mâchouillé.");
 
                     if (!isLeadBulletsCollected)
                     {
                         Console.WriteLine(
 @"
-Dans l'autre main, il semble tenir quelquechoes fermemant
+Dans l'autre main, il semble tenir quelque chose fermement.
 
 Voulez-vous voir ce que c'est ?
 [OUI] | [NON]
@@ -92,7 +89,7 @@ ressemblant à des billes en métal." + warning);
                         else
                         {
                             Console.WriteLine(
-@"Vous ne vous s'entez pas super bien de toucher un mort. Vous laissez tombez et vous vous
+@"Vous ne vous sentez pas super bien de toucher un mort. Vous laissez tomber et vous vous
 éloignez du corps." + warning);
                         }
                     }
@@ -104,14 +101,14 @@ ressemblant à des billes en métal." + warning);
                     if (!isLeadBulletsCollected)
                     {
                         Console.WriteLine(
-@"Vous prenez le sac que tenait le cadavre et le m'êtez dans votre poche" + warning +
-@"
-[BALLES EN PLOMB] rajoutées à votre inventaire.");
+@"Vous prenez le sac que tenait le cadavre et le mettez dans votre poche.
+
+[BALLES EN PLOMB] rajoutées à votre inventaire." + warning);
                     }
                     else
                     {
                         Console.WriteLine(
-@"Un petit sac remplie de balles en plombs.");
+@"Un petit sac remplie de balles en plomb.");
                     }
 
                     break;
@@ -152,10 +149,10 @@ voir ce qu'il y a de l'autre côté." + warning);
                 case "caisse":
                     getFrozen++;
                     Console.WriteLine(
-@"Vous rapprochez une caisse près de la porte et regarder entravers du hublot. Malgré le givre
+@"Vous rapprochez une caisse près de la porte et regarder à travers du hublot. Malgré le givre
 qui recouvre la vitre, vous pouvez voir un couloir qui va de gauche à droite dont les murs sont
-recouvert de tuyaux et d'engrenages.
-En regardant plus bas, vous voyez ce que vous penssez être 2 chiens qui se reposent et gardent
+recouverts de tuyaux et de mécanismes.
+En regardant plus bas, vous voyez ce que vous pensez être 2 chiens qui se reposent et gardent
 l'entrée.
 Ils seront certainement un problème lorsque vous ouvrirez la porte.");
                     break;
@@ -163,7 +160,7 @@ Ils seront certainement un problème lorsque vous ouvrirez la porte.");
                 case "porte":
                     Console.WriteLine(
 @"Vous ressortez de la chambre froide.
-La chaleur du magazin vous fait un bien fou après avoir été dans ce froid mortel.");
+La chaleur du magasin vous fait un bien fou après avoir été dans ce froid mortel.");
                     Game.Transition<Freezer>();
                     getFrozen = 0;
                     break;
@@ -178,11 +175,12 @@ couché le [CADAVRE] des [VÊTEMENTS] qui semble hors du commun.");
                 case "vêtements":
                     getFrozen++;
                     Console.WriteLine(
-@"Vous vous raprochez du linge et remarquer qu'il ressemble à une tenue que vous avez vu dans
-vous cours d'histoire. Ces vêtements sont exactement comme les uniformes que portait les soldats
-britaniques lors du 18ème siècle. Comment s'est arrivé ici ?
+@"Vous vous rapprochez du linge et remarquer qu'il ressemble à une tenue que vous avez vue
+dans vos cours d'histoire. Ces vêtements sont exactement comme les uniformes que portaient
+les soldats britanniques lors du 18e siècle.
+Comment c'est arrivé ici ?
 
-En soulevant la tunique, un morceau de papier tombe d'une des poche. Un [MESSAGE] semble être
+En soulevant la tunique, un morceau de papier tombe d'une des poches. Un [MESSAGE] semble être
 écrit dessus.");
                     break;
 
@@ -191,24 +189,24 @@ En soulevant la tunique, un morceau de papier tombe d'une des poche. Un [MESSAGE
                     Console.WriteLine(
 @"Le message est difficile à lire, mais vous arrivez à lire une partie :
 
-« Que dieu me pardonne pour cette pensé, mais le champ boueux et le sifflement des balles de
-la guerre commence à me manquer. Le son scilencieux de moteur et les corps terrifiés sont pire
-que l'enfer.
+« Que Dieu me pardonne pour cette pensée, mais le champ boueux et le sifflement des balles de
+la guerre commencent à me manquer. Le son silencieux de moteur et les corps terrifiés sont
+pires que l'enfer.
 
-J'ai vu la chose qui vit ici. Elle est pire que tout les horreurs décrit par la bible. Elle se
-promène avec ces créature, des chiens difforme et démoniaque. Ils sembles la craindre toute
-autant que moi. Ils semblent affamé ces pauvres bêtes.
+J'ai vu la chose qui vit ici. Elle est pire que toutes les horreurs décrites dans la Bible.
+Elle se promène avec ces créatures, des chiens difformes et démoniaques. Ils semblent la
+craindre toute autant que moi. Ils semblent affamer ces pauvres bêtes.
 
-Qu'est-ce que je racconte ? Me voilà entrain de prendre en pitié ces démons.
+Qu'est-ce que je raconte ? Me voilà à prendre en pitié ces démons.
 
-Je ne sais pas depuis combien de temps je suis ici, ni combien de temps ça va duré. J'ai du me
-nourrir de ce qu'offrait ce magasin pour survivre, et je brulerait probablement en enfer après
-avoir su ce que je mangais.
+Je ne sais pas depuis combien de temps je suis ici, ni combien de temps ça va durer. J'ai dû
+me nourrir de ce qu'offrait ce magasin pour survivre, et je brûlerai sûrement en enfer pour
+ce que j'ai mangé.
 
-Parfois, je t'entend m'appelé maman. Je pense que cette endroit me rend fou. Ou est-ce la mort
-qui m'appelle.
+Parfois, je t'entends m'appeler maman. Je pense que cet endroit me rend fou. Ou est-ce la Mort
+qui m'appelle ?
 
-Tu me manques maman, j'aurais voulu m'excusé avant de partir pour la bataille. J'aimerais te
+Tu me manques maman, j'aurais voulu m'excuser avant de partir pour la bataille. J'aimerais te
 dire que je suis déso... »
 
 Le reste du texte est taché par le sang.");
