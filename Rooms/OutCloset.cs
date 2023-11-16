@@ -7,19 +7,6 @@
             if (!Closet.isFlashlightCollected == true || !Closet.isMapCollected == true)
             {
                 return
-                @"
-Vous sortez et vous vous retrouvez dans un endroit plongé dans l'ombre illuminé
-que part la lumière bleuté des congélateurs plus loin.
-Vous pouvez percevoir quelques étagères semblables à celles qu'on pourrait retrouver
-dans une épicerie, mais elles montent beaucoup plus haut que celles que vous connaissez.
-
-Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
-endroit avec votre [CARTE].
-";
-            }
-            else
-            {
-                return
 @"
 Vous sortez et vous vous retrouvez dans un endroit plongé dans l'ombre illuminé
 que part la lumière bleuté de congélateur.
@@ -28,6 +15,20 @@ dans une épicerie, mais elles montent beaucoup plus haut que celles que vous co
 
 Il semble vous manquer quelque chose. Peut-être qu'il serait préférable de continuer à
 chercher dans le [PLACARD].
+";
+
+            }
+            else
+            {
+                return
+@"
+Vous sortez et vous vous retrouvez dans un endroit plongé dans l'ombre illuminé
+que part la lumière bleuté des congélateurs plus loin.
+Vous pouvez percevoir quelques étagères semblables à celles qu'on pourrait retrouver
+dans une épicerie, mais elles montent beaucoup plus haut que celles que vous connaissez.
+
+Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
+endroit avec votre [CARTE].
 ";
             }
         }
