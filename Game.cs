@@ -128,7 +128,7 @@ autre endroit avec votre [CARTE].");
 Un dessin d'un téléphone avec à côté une pièce de monnaie avec une flèche pointant vers
 « Caisse n°1 »
 
-Un autre montre deux chiens qui regardent avec des cœurs un gigot qui pointe avec une
+Un autre montre deux chiens qui regardent avec des coeurs un gigot qui pointe avec une
 flèche « Petit congélateur »
 
 Un plan d'une pièce qui montre cinq dessins d'un petit monstre étiquetés de 1 à 5.
