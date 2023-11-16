@@ -53,7 +53,7 @@ les affame.
 « Je dois partir, mais je promets de revenir vous cherchez dès que possible. »
 
 En vous éloigant, ils laissent s'échapper ce qui ressemble à des petits jappements de
-tristesse. Ce qui vous brise le cœur, mais vous n'avez pas le choix, vous devez
+tristesse. Ce qui vous brise le coeur, mais vous n'avez pas le choix, vous devez
 partir.");          
                         comeBackForYou = true;
                     }
@@ -119,7 +119,7 @@ pour décrire votre état.
 
 Vous avez la tête qui tourne. Vous avez l'impression qu'on a brisez presque tout les os.
 Vous ne sentez plus vos jambe. Vos oreilles sifllent et vous entendez à peine.Seul Vous ne
-voyez plus rien de votre œil droit et votre œil gauche voie floue. Votre bras gauche est
+voyez plus rien de votre oeil droit et votre oeil gauche voie floue. Votre bras gauche est
 complètement écrasé. Mais votre bras drois est encore utilisable, même s'il est dans un
 térrible état.
 

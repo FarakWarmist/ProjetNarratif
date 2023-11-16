@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ProjetNarratif.Rooms
 {
@@ -450,7 +450,7 @@ vite possible !");
                     Console.WriteLine(
 @"Vous regardez les étagères et, même si certains sont presque drôles comme « La poudre d'os »
 montrant un squelette cartoonesque faire un gâteau, vous êtes rapidement teriffié en regardant
-les autres produits : « Majeur au vinaigre », « Œil à l'ail », « Biceps séché », « Cervelle en
+les autres produits : « Majeur au vinaigre », « OEil à l'ail », « Biceps séché », « Cervelle en
 conserve »...
 
 Vous savez au fond de vous que c'est ce qui vous attend si vous ne partez pas vite d'ici.");

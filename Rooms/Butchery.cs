@@ -170,7 +170,7 @@ semble l'avoir remarque. Elle a cesser de chanter et l'eau, de couler. Vous tent
 contrôler votre respiration de votre mieux. Le silence à remplie la pièce.
 
 Soudainement, vous sentez un pieux de métal transpercer le fond du lavabo pour se planter
-directement dans votre cœur. Le sang remplie rapidement vos poumons et vous mourrez le
+directement dans votre coeur. Le sang remplie rapidement vos poumons et vous mourrez le
 cœur percé.
 
 

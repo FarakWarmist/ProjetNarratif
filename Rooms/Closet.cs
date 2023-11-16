@@ -12,7 +12,7 @@
 
         internal override string CreateDescription() =>
 @"
-Une odeur de fer et de moisie, ajouté avec l'humidité dans la pièce vous donne mal au cœur.
+Une odeur de fer et de moisie, ajouté avec l'humidité dans la pièce vous donne mal au coeur.
 La pièce est petite et remplie de tuyaux qui fuitent. Le silence est rempli par un bruit de
 moteur étouffé et par la seule ampoule qui clignote sans cesse accroché au plafond.
 Un gros [TAS DE LINGE] mouillés se trouve au fond de la pièce, une boîte de [DISJONCTEUR] et

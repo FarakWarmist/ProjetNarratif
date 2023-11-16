@@ -1,4 +1,4 @@
-﻿namespace ProjetNarratif.Rooms
+namespace ProjetNarratif.Rooms
 {
     internal class Freezer : Room
     {
@@ -52,7 +52,7 @@ Dans quel genre d'endroit êtes-vous tombé ?");
                 case "viande":
                     Console.WriteLine(
 @"Vous décidez d'ouvrir un des congélateurs et de prendre un des morceaux de viande au hasard.
-Vous ressortez un sac écrit « Quarts d'Avant-Bras », ce qui vous lève le cœur, mais vous
+Vous ressortez un sac écrit « Quarts d'Avant-Bras », ce qui vous lève le coeur, mais vous
 prenez sur vous. Peut-être que ça vous sera utile.
 
 [VIANDE] rajoutée à votre inventaire.");
