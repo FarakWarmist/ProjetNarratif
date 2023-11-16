@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace ProjetNarratif.Rooms
 {
@@ -422,17 +422,16 @@ mais vous arrivez à lire ce qui suit :
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 09/24/83
 
-Une semaine s'est écoulée depuis la disparition des quatre adolescents,
-les familles, des amis et les gens du quartier continuent de porter des
+Une semaine s'est écoulée depuis la disparition des quatre adolescents.
+Les familles, des amis et les gens du quartier continuent de porter des
 fleurs devant le vieux magasin abandonné.
 
 Ce même magasin ou les sep... (la page est illisible)..., le 17 
 septembre dans le quarti... (la page est déchirée à partir de là).
 ______________________________________________________________________
 
-« Une semaine ?! » vous pensez. Pourtant vous êtes sûr que vous y étiez il y a quelques heures,
-comment une semaine a bien pu s'écouler aussi rapidement ?! Vous devez sortir d'ici et le plus
-vite possible !");
+« Une semaine ?! » vous pensez. Pourtant vous êtes sûr que vous y étiez il y a quelques heures.
+Comment une semaine a bien pu s'écouler aussi rapidement ?!");
                     break;
 
                 /*case "???":
