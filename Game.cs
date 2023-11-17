@@ -1,4 +1,4 @@
-﻿using ProjetNarratif.Rooms;
+using ProjetNarratif.Rooms;
 
 namespace ProjetNarratif
 {
@@ -126,18 +126,23 @@ autre endroit avec votre [CARTE].");
 @"Le journal est rempli de notes et de gribouillis.
 
 Un dessin d'un téléphone avec à côté une pièce de monnaie avec une flèche pointant vers
-« Caisse n°1 »
+« Caisse n°1 ».
 
 Un autre montre deux chiens qui regardent avec des coeurs un gigot qui pointe avec une
-flèche « Petit congélateur »
+flèche « Petit congélateur ».
 
-Un plan d'une pièce qui montre cinq dessins d'un petit monstre étiquetés de 1 à 5.
-Le premier se tient au milieu de la pièce.
-Le deuxième semble avoir des couteaux dans les mains et se tient devant un meuble.
-Le troisième tient un sac ensanglanté jusqu'à une poubelle.
-Le quatrième montre le monstre laver ses couteaux.
-Et le cinquième est le monstre qui pose un trousseau de clé dans un placard.
-Le trousseau est encerclé et une flèche pointe un cadenas bleu et blanc.");
+Un plan d'une pièce qui montre cinq dessins d'un petit monstre étiquetés de 1 à 5:
+ - Le premier se tient au milieu de la pièce.
+ - Le deuxième semble avoir des couteaux dans les mains et se tient devant un meuble.
+ - Le troisième tient un sac ensanglanté jusqu'à une poubelle.
+ - Le quatrième montre le monstre laver ses couteaux.
+ - Et le cinquième est le monstre qui pose un trousseau de clés dans un placard.
+
+Le mot « Boucherie » avec une flèche pointant un trousseau de clés.
+
+Le trousseau est encerclé et une flèche pointe un cadenas bleu et blanc avec des
+flocons de neige.
+");
         }
 
         internal static void Inventory()
@@ -190,8 +195,9 @@ Le trousseau est encerclé et une flèche pointe un cadenas bleu et blanc.");
             Console.WriteLine(
 @"Où voulez-vous allez?
 
-Vous pouvez aller au [TÉLÉPHONE], à la [BOUCHERIE], dans le [CONGÉLATEUR],
-au [PLACARD] ou la [CAISSE].");
+Vous pouvez aller au [TÉLÉPHONE], à la [BOUCHERIE], au [CONGÉLATEUR],
+au [PLACARD] ou la [CAISSE].
+");
             toGo = Console.ReadLine().ToLower();
 
             switch (toGo)
