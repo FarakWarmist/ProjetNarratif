@@ -17,8 +17,8 @@ Il semble avoir une [PERSONNE] derrière la caisse du milieu.
 Tout au fond, vous pouvez voir dans le coin une immense [PORTE].
 La première [CAISSE] attire aussi votre attention.
 
-Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
-endroit avec votre [CARTE].";
+Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers
+un autre endroit avec votre [CARTE].";
 
         internal override void ReceiveChoice(string choice)
         {
@@ -29,12 +29,14 @@ endroit avec votre [CARTE].";
                     {
                         Console.WriteLine(
 @"Vous vous approchez la personne.
-Plus vous vous rapprochez, plus vous réalisez que la personne devant vous est un corps dont la
-mort semble être une sévère déshydratation.
+Plus vous vous rapprochez, plus vous réalisez que la personne devant vous est un corps
+dont la mort semble être une sévère déshydratation.
+
 Vous remarquez qu'il porte un tablier écrit « Welcom to Olga's Meat Store ».
 
-Vous fouillez ces poches de pantalon. Peut-être a-t-il quelque chose d'utile sur
-lui. Peut-être qu'avec de la chance, il aura l'un de ces téléphones portalbes.
+Vous fouillez ces poches de pantalon. Peut-être a-t-il quelque chose d'utile sur lui.
+Peut-être qu'avec de la chance, il aura l'un de ces téléphones portalbes. 
+
 Vous ne trouvez rien malheureusement.");
                         alreadySeen = true;
                     }

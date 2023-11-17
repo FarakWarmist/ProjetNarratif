@@ -8,11 +8,12 @@
 @"
 L'air est plus frais par ici. Plusieurs congélateurs vitrés sont placés pour présenter
 divers produits que vous n'arrivez pas à voir d'ici.
-Au mur, se trouve une grande [PORTE] coulissante dont de l'air froid s'en échappe, créant
-une épaisse brume toute autour.
 
-Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un autre
-endroit avec votre [CARTE].
+Au mur, se trouve une grande [PORTE] coulissante dont de l'air froid s'en échappe,
+créant une épaisse brume toute autour.
+
+Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers
+un autre endroit avec votre [CARTE].
 ";
 
         internal override void ReceiveChoice(string choice)
@@ -54,9 +55,9 @@ Dans quel genre d'endroit êtes-vous tombé ?");
 
                 case "viande":
                     Console.WriteLine(
-@"Vous décidez d'ouvrir un des congélateurs et de prendre un des morceaux de viande au hasard.
-Vous ressortez un sac écrit « Quarts d'Avant-Bras », ce qui vous lève le coeur, mais vous
-prenez sur vous. Peut-être que ça vous sera utile.
+@"Vous décidez d'ouvrir un des congélateurs et de prendre un des morceaux de viande au
+hasard. Vous ressortez un sac écrit « Quarts d'Avant-Bras », ce qui vous lève le coeur,
+mais vous prenez sur vous. Peut-être que ça vous sera utile.
 
 [VIANDE] rajoutée à votre inventaire.");
                     break;

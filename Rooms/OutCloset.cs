@@ -46,9 +46,9 @@ endroit avec votre [CARTE].
                     else
                     {
                         Console.WriteLine(
-@"Vous pouvez percevoir quelques étagères semblables à celles qu'on pourrait retrouver dans une
-épicerie, mais elles montent beaucoup plus haut que celles que vous connaissez. Le sol est
-carrelé et semble tâché et peu entretenue.
+@"Vous pouvez percevoir quelques étagères semblables à celles qu'on pourrait retrouver
+dans une épicerie, mais elles montent beaucoup plus haut que celles que vous connaissez.
+Le sol est carrelé et semble tâché et peu entretenue.
 
 Tout le reste est plonger dans le noir complet même avec votre lampe de poche en main.");
                     }
