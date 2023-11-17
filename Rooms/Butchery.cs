@@ -7,23 +7,24 @@
         internal static string ? toDo;
 
         internal override string CreateDescription() =>
-
 @"
-Vous marchez un moment jusqu'à la boucherie. Durant se temps vous avez entendu les bruits de
-chaines s'entrechoquer résonner dans tout le bâtiment.
+Vous marchez un moment jusqu'à la boucherie. Durant le tout le trajet, vous
+entendiez les bruits de chaînes s'entrechoquant résonner dans tout le bâtiment.
+Vous approchez une entrée dont une forte odeur de fer et une lumière jaune et
+rouge s'en échappe.
 
-Vous approchez une entrée dont une forte odeur de fer et une lumière jaune et rouge s'en échappe.
-En regardant à l'intérieur, vous êtes pétrifier par la scène:
-La pièce comporte plusieurs table de travail, dont une au cente, des étagères et un comptoir avec
-lavabo. Des organes et morceau de corps sont étalé sur les différent comptoire et la totalité de
-l'endroit est maculé de sang.
+En regardant à l'intérieur, vous êtes pétrifié par la scène :
+La pièce comporte plusieurs tables de travail, dont une au centre, des étagères
+et un comptoir avec lavabo. Des organes et morceaux de corps sont étalés sur
+les différents comptoirs et la totalité de l'endroit est maculé de sang.
 
-Lorsque vous êtes pour partir loin de cette endroit maccabre, vous entendez de lourd pas se
-rapprocher de votre position. Elle arrive et vous pouvez entendre qu'elle traine quelque chose.
-Vous n'avez pas le choix de vite trouvez un endroit où vous cacher.
+Lorsque vous vous apprêtez à partir loin de cette scène de crime, vous entendez
+de lourd pas se rapprocher de votre position. Elle arrive et vous pouvez entendre
+qu'elle traîne quelque chose. Vous n'avez pas le choix de vite trouver un endroit
+où vous cacher.
 
-Où voulez-vous vous cacher ? Derrière l'[ILOT], la [POUBELLE], le [LAVABO], l'[ÉTAGÈRE] à outils
-ou le [PLACARD]?
+Où voulez-vous vous cacher ? Derrière l'[ILOT], la [POUBELLE], le [LAVABO],
+l'[ÉTAGÈRE] à outils ou le [PLACARD] ?
 ";
 
 
@@ -38,10 +39,11 @@ ou le [PLACARD]?
                         case 1:
                             Console.Clear();
                             Console.WriteLine(
-@"Vous faite dos à l'ilot. Vous pouvez l'entendre se rapprochez et s'arrêter tout prêt.
+@"Vous faites dos à l'ilot. Vous pouvez l'entendre se rapprocher et s'arrêter tout
+prêt.
 
-Vous êtes tout à coup renversez par un tas de boyaux qui vient de vous tomber dessus. Le sang
-sur vos yeux vous empêche de bien voir.
+Vous êtes tout à coup renversé par un tas de boyaux qui vient de vous tomber dessus.
+Le sang sur vos yeux vous empêche de bien voir.
 
 Vous entendez d'une voix distordue « VIANDE ! » avant de sentir votre tête s'envoler.
 
@@ -50,7 +52,8 @@ VOUS ÊTES MORT !
 
 ___________________________
 Voulez-vous revenir en arrière ?
-[OUI] | [NON]");
+[OUI] | [NON]
+");
 
                             toDo = Console.ReadLine().ToLower();
                             if(toDo == "non")
@@ -79,21 +82,23 @@ Voulez-vous revenir en arrière ?
                             Console.WriteLine(
 @"Vous vous cachez derrière l'étagère... Là où le monstre se rendait.
 
-En réalisant votre erreur, vous tentez de vous sauvez !
+En réalisant votre erreur, vous tentez de vous sauver !
 
-Alors que vous penssiez avoir une chance, vous sentez une résistance et une douleur vive
-en-dessous de votre machoir ainsi que goût métalique dans votre boucher. Vous remarquez
-un crochet vient de vous traverser la machoire inférieur.
+Alors que vous pensiez avoir une chance, vous sentez une résistance et une vive
+douleur en dessous de votre mâchoire ainsi qu'un goût métallique dans votre bouche.
 
-Vous n'avez pas le temps de réaliser la situation que vous s'entez le crochet rapidement
-remonter... Et plus rien.
+Vous remarquez un crochet vient de vous traverser la mâchoire inférieure.
+
+Vous n'avez pas le temps de réaliser la situation que vous sentez le crochet
+rapidement remonter... Et plus rien.
 
 
 VOUS ÊTES MORT !
 
 ___________________________
 Voulez-vous revenir en arrière ?
-[OUI] | [NON]");
+[OUI] | [NON]
+");
 
                             toDo = Console.ReadLine().ToLower();
                             if (toDo == "non")
@@ -119,22 +124,23 @@ Voulez-vous revenir en arrière ?
                         case 3:
                             Console.Clear();
                             Console.WriteLine(
-@"Vous pensez être à l'habrit derière la poubelle, jusqu'à ce que vous réalisez qu'il
-y a quelque chose de grand qui vous fait de l'ombre. À peine vous avez le temps de vous
-retournez que vous êtes immédiatement attraper par la créature.
+@"Vous pensez être à l'abri derrière la poubelle, jusqu'à ce que vous réalisiez
+qu'il y a quelque chose de grand qui vous fait de l'ombre. À peine vous avez le
+temps de vous retourner que vous êtes immédiatement attrapé par la créature.
 
-D'une seuls main, elle vous raproche de son visage pour mieux vous observez. Vous pouvez
-voir entre les fentes de son masque ses dans et un œil qui semble aveugle. Elle lève le
-pousse et le pause lentement sur le haut de votre torse. Vous essayez de vous débattre
-mais rien n'y fait. Les dernières choses dont vous vous souvenez sont le craquement de
-votre dos et une voix difforme dire « Mne zhal' ».
+D'une seule main, elle vous rapproche de son visage pour mieux vous observer. Vous
+pouvez voir entre les fentes de son masque, ses dents et un oeil qui semble aveugle.
+Elle lève le pouce et le pause lentement sur le haut de votre torse. Vous essayez
+de vous débattre, mais rien n'y fait. Les dernières choses dont vous vous souvenez
+sont une voix difforme dire « Mne zhal' » et le craquement de votre dos.
 
 
 VOUS ÊTES MORT !
 
 ___________________________
 Voulez-vous revenir en arrière ?
-[OUI] | [NON]");
+[OUI] | [NON]
+");
 
                             toDo = Console.ReadLine().ToLower();
                             if (toDo == "non")
@@ -160,25 +166,29 @@ Voulez-vous revenir en arrière ?
                         case 4:
                             Console.Clear();
                             Console.WriteLine(
-@"Vous vous cachez en-dessus du lavabo à temps mais pas dans une bonne position. Au moment
-où vous comptiez vous replacer, deux massive botte se tient devant vous. Vous entendez
-l'eau couler au dessus, et la créature se met à chanter une berceuse dans une langue que
-que vous ne connaissez pas. Sa voix est devenu douce et rassurante.
+@"Vous vous cachez en dessus du lavabo à temps, mais pas dans une bonne position.
 
-La position dans laquelle vous vous êtes placer vous donne du mal à respirer. Et elle
-semble l'avoir remarque. Elle a cesser de chanter et l'eau, de couler. Vous tentez de
-contrôler votre respiration de votre mieux. Le silence à remplie la pièce.
+Au moment où vous comptiez vous replacer, deux massives bottes se tiennent devant
+vous. Vous entendez l'eau couler au-dessus, et la créature se met à chanter une
+berceuse dans une langue que vous ne comprenez pas. Sa voix est devenue douce et
+rassurante.
 
-Soudainement, vous sentez un pieux de métal transpercer le fond du lavabo pour se planter
-directement dans votre coeur. Le sang remplie rapidement vos poumons et vous mourrez le
-cœur percé.
+La position dans laquelle vous vous êtes placé vous donne du mal à respirer, et
+elle semble l'avoir remarquée. Elle cesse de chanter, et l'eau de couler. Vous
+tentez de contrôler votre respiration de votre mieux. Le silence a rempli la
+pièce.
+
+Soudainement, vous sentez un pieu de métal transpercer le fond du lavabo pour se
+planter directement dans votre coeur. Le sang remplit rapidement vos poumons et
+vous mourrez le coeur percé.
 
 
 VOUS ÊTES MORT !
 
 ___________________________
 Voulez-vous revenir en arrière ?
-[OUI] | [NON]");
+[OUI] | [NON]
+");
 
                             toDo = Console.ReadLine().ToLower();
                             if (toDo == "non")
@@ -204,14 +214,18 @@ Voulez-vous revenir en arrière ?
                         case 3:
                             Console.Clear();
                             Console.WriteLine(
-@"Vous aller rapidement derrière le placard. Mais vous réaliser que les pas se dirige ici
-et vous êtes instantanément repéré. Dans la panique vous glissez sur le sang par terre et
-tombez sur le sol. La créature se rapproche de vous. Vous êtes dos au mur, il n'y a nul
-part où aller ! Elle s'agenouille. Vous fermez les yeux.
+@"Vous allez rapidement derrière le placard. Mais vous réalisez alors que
+les pas se dirigent ici et vous êtes instantanément repéré. Dans la panique,
+vous glissez sur le sang par terre et tombez sur le sol.
 
-Vous sentez son doigt essuyer les larmes sur vos joue. Vous avez le courage d'ouvrir un
-œil. Elle vous observe, comme une mère regarderait son enfant en peine. Elle vous
-serre avec douceur dans ses bras. Pourquoi est-elle si soudainement rassurante.
+La créature se rapproche de vous. Vous êtes dos au mur, il n'y a nulle part
+où aller ! Elle s'agenouille. Vous fermez les yeux.
+
+Vous sentez son doigt essuyer les larmes sur vos joues. Vous avez le courage
+d'ouvrir un oeil. Elle vous observe, comme une mère regarderait son enfant en
+peine. Elle vous serre avec douceur dans ses bras. 
+
+Pourquoi est-elle si soudainement rassurante ?
 
 « ... Hu... go... »
 
@@ -219,9 +233,9 @@ Cette voix ! Vous la connaissez ! C'est celle de votre mère.
 
 « ... Mon... pauvre... petit... ange... »
 
-Maman... Elle vous manque... Vous ne vouliez pas partir comme ça. Vous auriez voulu lui
-dire que vous l'aimiez et que vous saviez que ce n'est pas de ça faute... C'était de la
-faute à personne.
+Maman... Elle vous manque... Vous ne vouliez pas partir comme ça. Vous auriez
+voulu lui dire que vous l'aimez et que vous saviez que ce n'est pas de ça
+faute... C'était de la faute à personne.
 
 Vous vous sentez fatigué et rassuré... Vous êtes... en... sécurité...
 
@@ -230,7 +244,8 @@ VOUS ÊTES MORT !
 
 ___________________________
 Voulez-vous revenir en arrière ?
-[OUI] | [NON]");
+[OUI] | [NON]
+");
 
                             toDo = Console.ReadLine().ToLower();
                             if (toDo == "non")
@@ -257,7 +272,7 @@ Voulez-vous revenir en arrière ?
                     else
                     {
                         Console.WriteLine(
-@"Un trousseau dont les clés sont presque aussi long que la distance entre vos deux épaules.");
+@"Un trousseau comportant d'énormes clés.");
 
                         if (!isBunchOfKeysCollected)
                         {
@@ -277,8 +292,10 @@ Voulez-vous revenir en arrière ?
                     else
                     {
                         Console.WriteLine(
-@"Vous regarder autour. Vous êtes surpris de remarquez que la pièce est plus propre après
-cette boucherie qu'elle l'était avant.");
+@"Vous regardez autour de vous.
+
+Vous êtes surpris de remarquer que la pièce est plus propre après cette
+boucherie qu'elle l'était avant.");
                         if (!isBunchOfKeysCollected)
                         {
                             Console.WriteLine(
@@ -290,14 +307,7 @@ Vous remarquez aussi le [TROUSSEAU DE CLÉS] dans le placard.");
                     break;
 
                 case "journal":
-                    if (Game.hideEvent! > 5)
-                    {
-                        Console.WriteLine("Commande invalide.");
-                    }
-                    else
-                    {
-                        Game.Journal();
-                    }
+                    Game.Journal();
                     break;
 
                 case "carte":
@@ -312,8 +322,8 @@ Vous remarquez aussi le [TROUSSEAU DE CLÉS] dans le placard.");
                             Console.WriteLine(
 @"Vous sentez qu'il vous manque quelque chose avant de partir.
 
-Vous préférez être sur de partir avec tout ce que cette endroit a à offrir, vous ne
-souhaitez pas revenir ici.");
+Vous préférez être sûr de partir avec tout ce que cet endroit a à offrir,
+vous ne souhaitez pas revenir ici.");
                         }
                         else 
                         { 
