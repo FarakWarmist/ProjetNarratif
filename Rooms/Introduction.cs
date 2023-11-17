@@ -22,7 +22,9 @@ et votre survie.
 - Mécaniques de jeu -
 
 Les mots encadrés de [CROCHETS] signifient que vous pouvez interagir avec, y effectuer
-une action ou vous y déplacer.
+une action ou vous y déplacer. Vous n'êtes pas obligé de l'écrire tout en majuscules,
+mais pour le reste, n'oubliez pas d'écrire le mot EXACTEMENT comme il est écrit entre
+les crochets.
 
 Vous pouvez à tout moment utiliser votre Inventaire pour regarder tout ce que vous
 avez collecté jusqu'à maintenant. Tout objet collecté peut être utilisé à n'importe
@@ -31,11 +33,16 @@ quel moment, mais ça ne veut pas dire que ça marchera tout le temps.
 Une fois collecté, vous pourrez vous référer au Journal pour avoir des indices sur
 ce qu'il faut que vous fassiez et comment survivre à certains problèmes que vous
 devrez faire face. Vous collecterez aussi une Carte qui vous permettra de vous
-déplacer dans les différentes zones du magasin.";
+déplacer dans les différentes zones du magasin.
+
+Si vous mourez dans le jeu, ne vous inquiétez pas ! Vous aurez la possibilité de
+revenir en arrière et d'éviter de faire la même erreur.
+
+
+ >> CLIQUEZ SUR N'IMPORTE QUELLE TOUCHE POUR COMMENCER À JOUER";
 
         internal override void ReceiveChoice(string choice)
         {
-            Console.ReadKey();
             Game.Transition<Closet>();
         }
     }
