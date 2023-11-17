@@ -1,4 +1,4 @@
-﻿namespace ProjetNarratif.Rooms
+namespace ProjetNarratif.Rooms
 {
     internal class Backstore : Room
     {
@@ -383,7 +383,7 @@ Cet endroit n'a pas dû être une vraie partie de plaisir pour eux aussi...");
                             Console.ReadKey();
                             Console.WriteLine(
 @"
-« Vous avez raison. Ne tardons pas ici plus longtemps... On y va. »");
+ ");
                             Console.ReadKey();
                             Console.Clear();
                         }
