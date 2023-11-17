@@ -1,4 +1,4 @@
-using ProjetNarratif.Rooms;
+﻿using ProjetNarratif.Rooms;
 
 namespace ProjetNarratif
 {
@@ -59,62 +59,77 @@ namespace ProjetNarratif
                     Console.WriteLine(
 @"Vous arrivez à vous cacher de justest !
 
-Vous observez une femme au corps grand et massif à la peau rosé avec des marque de brûlures
-et des blessures brochées. Elle a de long cheveux argentés en pointe. Autour de son cou se
-trouve trois crâne humain ratacher à une corde et porte un masque de métal encastré sur son
-visage. Malgré son apparence humanoïde, vous sentez que cette chose est tout sauf humaine.
+Vous observez une femme au corps grand et massif à la peau rosée avec des
+marque de brûlures et des blessures brochées. Elle a de longs cheveux
+argentés en pointe.
 
-D'une simple main, elle dégage les boyaux trainant sur l'ilot, étant une nape en jute et 
-pose plusieurs corps dessus.
+Autour de son cou se trouve trois crânes humains ratachés à une corde et
+elle porte un masque de métal encastré sur son visage. Malgré son apparence
+humanoïde, vous sentez que cette chose est tout sauf humaine.
 
-Elle se déplace. Où voulez-vous vous cacher ? Derrière l'[ILOT], la [POUBELLE], le [LAVABO],
-l'[ÉTAGÈRE] à outils ou le [PLACARD]?");
+D'une simple main, elle dégage les boyaux trainant sur l'ilot, étant une
+nappe en jute et pose plusieurs corps dessus.
+
+Elle se déplace. Où voulez-vous vous cacher ? Derrière l'[ILOT], la [POUBELLE],
+le [LAVABO], l'[ÉTAGÈRE] à outils ou le [PLACARD] ?
+");
                     break;
 
                 case 2:
                     Console.WriteLine(
 @"Vous êtes de nouveau à couvert.
 
-La créature ouvre son placard à outils et sélection divers instrument de boucher et revient
-à l'îlot. Vous détourner immédiatement le regard lorsqu'elle se met à découper les corps.
-Après un moment, elle pose quelques choses dans un panier et referme la nappe de jute.
+La créature ouvre son placard à outils et sélection divers instruments de boucher
+et revient à l'ilot. Vous détournez immédiatement le regard lorsqu'elle se met à
+découper les corps.
 
-Elle se déplace de nouveau. Où voulez-vous vous cacher ? Derrière l'[ILOT], la [POUBELLE],
-le [LAVABO], l'[ÉTAGÈRE] à outils ou le [PLACARD]?");
+Après un moment, elle pose quelques choses dans un panier et referme la nappe en
+jute.
+
+Elle se déplace de nouveau. Où voulez-vous vous cacher ? Derrière l'[ILOT], la
+[POUBELLE], le [LAVABO], l'[ÉTAGÈRE] à outils ou le [PLACARD] ?
+");
                     break;
 
                 case 3:
                     Console.WriteLine(
 @"Vous n'avez toujours pas été repéré.
 
-Vous la voyez mettre la nape remplie des restes dans la poubelle et revient à l'ilot pour
-prendre ses outils ensanglantés.
+Vous la voyez mettre la nappe remplie des restes dans la poubelle et revenir à
+l'ilot pour prendre ses outils ensanglantés.
 
-Elle se déplace une fois de plus. Où voulez-vous vous cacher ? Derrière l'[ILOT], la
-[POUBELLE], le [LAVABO], l'[ÉTAGÈRE] à outils ou le [PLACARD]?");
+Elle se déplace une fois de plus. Où voulez-vous vous cacher ? Derrière l'[ILOT],
+la [POUBELLE], le [LAVABO], l'[ÉTAGÈRE] à outils ou le [PLACARD] ?
+");
                     break;
 
                 case 4:
                     Console.WriteLine(
 @"Toujours cachez, vous regardez la créature ramener ses instruments de bouchers
-couverent de sang au lavabo et commencé à les lavées. Vous êtes surpris à l'entendre 
-soudainement chantonner une berceuse d'une voix douce et rassurant. Dans la panique,
-vous n'arrivez pas à reconnaître la langue dans laquelle elle la chante.
+couverts de sang au lavabo et commencer à les laver. 
 
-Elle vas bientôt bouger. Où voulez-vous vous cacher ? Derrière l'[ILOT], la [POUBELLE],
-le [LAVABO], l'[ÉTAGÈRE] à outils ou le [PLACARD]?");
+Vous êtes surpris à l'entendre soudainement chantonner une berceuse d'une voix
+douce et rassurante. Dans la panique, vous n'arrivez pas à comprendre la langue
+dans laquelle elle la chante.
+
+Elle vas bientôt bouger. Où voulez-vous vous cacher ? Derrière l'[ILOT], la
+[POUBELLE], le [LAVABO], l'[ÉTAGÈRE] à outils ou le [PLACARD] ?
+");
                     break;
 
                 case 5:
                     Console.WriteLine(
-@"Elle ne vous à pas encore vue.
+@"Elle ne vous a pas encore vue.
 
-Vous pouvez la voir marcher l'entement jusqu'au placard en métal, l'ouvrir et y mettre un
-[TROUSSEAU DE CLÉS] à l'intérieur. Elle prend ensuite le panier et s'en va de la pièce.
-Un moment passe avant que vous ayez le courrage de vous relever.
+Vous pouvez la voir marcher lentement jusqu'au placard en métal, l'ouvrir et y
+mettre un [TROUSSEAU DE CLÉS] à l'intérieur. Elle prend ensuite le panier et s'en
+va de la pièce.
 
-Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers un
-autre endroit avec votre [CARTE].");
+Un moment passe avant que vous ayez enfin le courage de vous relever.
+
+Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger
+vers un autre endroit avec votre [CARTE].
+");
                     hideEvent++;
                     break;
             }
