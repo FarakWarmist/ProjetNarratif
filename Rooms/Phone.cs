@@ -448,8 +448,8 @@ Mais tout ce que vous trouvez est cet [ARTICLE] d'une page de journal.");
 
                 case "article":
                     Console.WriteLine(
-@"Vous prenez le vieux morceau de journal. Certaines parties sont déchirées ou illisibles,
-mais vous arrivez à lire ce qui suit :
+@"Vous prenez le vieux morceau de journal. Certaines parties sont déchirées ou
+  illisibles, mais vous arrivez à lire ce qui suit :
 
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 09/24/83
@@ -458,12 +458,12 @@ Une semaine s'est écoulée depuis la disparition des quatre adolescents.
 Les familles, des amis et les gens du quartier continuent de porter des
 fleurs devant le vieux magasin abandonné.
 
-Ce même magasin ou les sep... (la page est illisible)..., le 17 
-septembre dans le quarti... (la page est déchirée à partir de là).
+Ce même magasin où les sep... (la page est illisible)..., le 17
+septembre dans le quarti... (la page est déchirée à partir de là.)
 ______________________________________________________________________
 
-« Une semaine ?! » vous pensez. Pourtant vous êtes sûr que vous y étiez il y a quelques heures.
-Comment une semaine a bien pu s'écouler aussi rapidement ?!");
+« Une semaine ?! » vous pensez. Pourtant vous êtes sûr que vous y étiez il y a
+quelques heures. Comment une semaine a bien pu s'écouler aussi rapidement ?!");
                     break;
 
                 /*case "???":
@@ -479,12 +479,13 @@ Comment une semaine a bien pu s'écouler aussi rapidement ?!");
 
                 case "regarder":
                     Console.WriteLine(
-@"Vous regardez les étagères et, même si certains sont presque drôles comme « La poudre d'os »
-montrant un squelette cartoonesque faire un gâteau, vous êtes rapidement teriffié en regardant
-les autres produits : « Majeur au vinaigre », « OEil à l'ail », « Biceps séché », « Cervelle en
-conserve »...
+@"Vous regardez les étagères et, même si certains sont presque drôles comme « La
+poudre d'os » montrant un squelette cartoonesque faire un gâteau, vous êtes
+rapidement terifié en regardant les autres produits : « Majeur au vinaigre »,
+« OEil à l'ail », « Biceps séché », « Cervelle en conserve »...
 
-Vous savez au fond de vous que c'est ce qui vous attend si vous ne partez pas vite d'ici.");
+Vous savez au fond de vous que c'est ce qui vous attend si vous ne partez pas vite
+d'ici.");
                     break;
 
                 case "journal":
