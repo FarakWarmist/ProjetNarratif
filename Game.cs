@@ -1,4 +1,4 @@
-using ProjetNarratif.Rooms;
+﻿using ProjetNarratif.Rooms;
 
 namespace ProjetNarratif
 {
@@ -216,14 +216,17 @@ au [PLACARD] ou la [CAISSE].
             switch (toGo)
             {
                 case "caisse":
+                    Console.Clear();
                     Game.Transition<Cashier>();
                     break;
 
                 case "téléphone":
+                    Console.Clear();
                     Game.Transition<Phone>();
                     break;
 
                 case "boucherie":
+                    Console.Clear();
                     if (!Cashier.lightsOn)
                     {
                         Console.WriteLine(
@@ -240,10 +243,12 @@ au [PLACARD] ou la [CAISSE].
                     break;
 
                 case "congélateur":
+                    Console.Clear();
                     Game.Transition<Freezer>();
                     break;
 
                 case "placard":
+                    Console.Clear();
                     Game.Transition<Closet>();
                     break;
 
