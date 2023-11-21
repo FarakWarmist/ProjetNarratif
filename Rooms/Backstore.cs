@@ -1,4 +1,4 @@
-namespace ProjetNarratif.Rooms
+﻿namespace ProjetNarratif.Rooms
 {
     internal class Backstore : Room
     {

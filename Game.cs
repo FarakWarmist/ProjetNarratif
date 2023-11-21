@@ -1,4 +1,4 @@
-﻿using ProjetNarratif.Rooms;
+using ProjetNarratif.Rooms;
 
 namespace ProjetNarratif
 {
@@ -127,10 +127,8 @@ va de la pièce.
 
 Un moment passe avant que vous ayez enfin le courage de vous relever.
 
-Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger
-vers un autre endroit avec votre [CARTE].
 ");
-                    hideEvent++;
+                    HideAndSeek.miniGameFinished = true;
                     break;
             }
         }
@@ -231,17 +229,13 @@ au [PLACARD] ou la [CAISSE].
                         Console.WriteLine(
 @"La boucherie est fermée. Vous revenez sur vos pas.");
                     }
+                    else if (!HideAndSeek.miniGameFinished)
+                    {
+                        Game.Transition<HideAndSeek>();
+                    }
                     else
                     {
-                        if (!Butchery.noMoreBuchery)
-                        {
-                            Game.Transition<Butchery>();
-                        }
-                        else
-                        {
-                            Console.WriteLine(
-@"Après ce qui c'est passez, vous ne voulez pas retourner là-bas.");
-                        }
+                        Game.Transition<Butchery>();
                     }
                     break;
 
