@@ -252,8 +252,9 @@ Le son s'évapore, jusqu'à ce qu'il reste plus rien...");
 
 
 
-    a     a    
-B      H      L");
+    e     z     t
+B                  H
+       L     E      ");
                         Console.ReadKey();
 
                         Console.Clear();
