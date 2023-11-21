@@ -30,7 +30,9 @@ Vous pouvez [REGARDER] les alentours ou regarder votre [INVENTAIRE].
                 case "tas de linge":
                     Console.WriteLine(
 @"Vous vous raprochez le tas de linges et remarquez que l'odeur de moisie devient plus fort.
-Voulez-vous fouillez dans le tas de linge?
+
+___________________________
+Voulez-vous fouiller le tas de linge?
 [OUI] | [NON]
 ");
                     toDo = Console.ReadLine().ToLower();
@@ -92,6 +94,7 @@ Peut-être y a-t-il une clé cachée dans le coin.");
 
 La [PORTE] est maintenant déverrouillez.
 
+___________________________
 Voulez-vous passer la porte?
 [OUI] | [NON]
 ");
