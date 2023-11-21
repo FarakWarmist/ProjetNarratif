@@ -18,7 +18,8 @@ Tout au fond, vous pouvez voir dans le coin une immense [PORTE].
 La première [CAISSE] attire aussi votre attention.
 
 Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger vers
-un autre endroit avec votre [CARTE].";
+un autre endroit avec votre [CARTE].
+";
 
         internal override void ReceiveChoice(string choice)
         {
@@ -77,14 +78,15 @@ autre moyen pour sortir.");
 @"Vous arrivez à ouvrir une des caisses. À l'intérieur, se trouve une seule pièce de
 monnaie.
 
+___________________________
 Voulez-vous prendre la [PIÈCE]?
-[OUI] ou [NON]");
+[OUI] ou [NON]
+");
                         toDo = Console.ReadLine().ToLower();
                         if (toDo == "oui") 
                         {
+                            Console.Clear();
                             Game.Transition<MamaOlgaIsHere>();
-                            isCoinCollected = true;
-                            lightsOn = true;
                         }
                         else
                         {

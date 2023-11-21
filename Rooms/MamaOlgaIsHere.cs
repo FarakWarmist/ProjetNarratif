@@ -71,6 +71,8 @@ vous sera peut-être utile.
 [PIÈCE] rajouté à votre inventaire.
 ");
                     Console.ReadKey();
+                    Cashier.isCoinCollected = true;
+                    Cashier.lightsOn = true;
                     Console.Clear();
                     Game.Transition<Cashier>();
                     break;
@@ -112,6 +114,7 @@ Voulez-vous revenir en arrière ?
                     toDo = Console.ReadLine().ToLower();
                     if (toDo != "non")
                     {
+                        Console.Clear();
                         Game.Transition<Cashier>();
                     }
                     else
