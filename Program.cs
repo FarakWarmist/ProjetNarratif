@@ -14,6 +14,7 @@ game.Add(new Phone());
 game.Add(new Backstore());
     game.Add(new BackstoreWithDogs());
 game.Add(new Butchery());
+    game.Add(new HideAndSeek());
 
 
 while (!game.IsGameOver())
