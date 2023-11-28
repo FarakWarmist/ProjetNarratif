@@ -4,6 +4,7 @@ using ProjetNarratif.Rooms;
 var game = new Game();
 
 game.Add(new Introduction());
+    game.Add(new Memor_IAOn());
 game.Add(new Closet());
     game.Add(new OutCloset());
 game.Add(new Cashier());

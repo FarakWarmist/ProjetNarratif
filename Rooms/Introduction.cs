@@ -2,8 +2,13 @@
 {
     internal class Introduction : Room
     {
+        internal static bool gameIsStarted;
+
         internal override string CreateDescription() =>
-@"
+@"Ouvrir [MEMOR-IA]
+
+ >> CLIQUEZ SUR N'IMPORTE QUELLE TOUCHE POUR COMMENCER À JOUER""";
+/*@"
 Le jeu que vous vous apprêtez à jouer est une version résumée d'un vieux projet
 interactif que j'ai tenté de faire sur Instagram. J'ai ensuite eu l'intention de le
 refaire en 3D, mais par manque de connaissances en matière de création de jeu 3D,
@@ -39,11 +44,64 @@ Si vous mourez dans le jeu, ne vous inquiétez pas ! Vous aurez la possibilité 
 revenir en arrière et d'éviter de faire la même erreur.
 
 
- >> CLIQUEZ SUR N'IMPORTE QUELLE TOUCHE POUR COMMENCER À JOUER";
+ >> CLIQUEZ SUR N'IMPORTE QUELLE TOUCHE POUR COMMENCER À JOUER";*/
 
         internal override void ReceiveChoice(string choice)
         {
-            Game.Transition<Closet>();
+            Console.Clear();
+            Console.Write(
+@"Bienvenu sur -/ MEMOR-IA /- 
+
+Source : ");
+            Thread.Sleep(1500);
+            Console.Write("t");
+            Thread.Sleep(0300);
+            Console.Write("a");
+            Thread.Sleep(0300);
+            Console.Write("r");
+            Thread.Sleep(0300);
+            Console.Write("o");
+            Thread.Sleep(0300);
+            Console.Write("-");
+            Thread.Sleep(0300);
+            Console.Write("0");
+            Thread.Sleep(0300);
+            Console.Write("3");
+
+            Console.Write(
+@"
+Recherche");
+            Thread.Sleep(1000);
+            Console.Write(".");
+            Thread.Sleep(1000);
+            Console.Write(".");
+            Thread.Sleep(1000);
+            Console.Write(".\n");
+            Thread.Sleep(1000);
+
+            Console.WriteLine(
+@"
+(1/3) programme(s) prêt(s).
+¯¯");
+            Thread.Sleep(1000);
+            Console.WriteLine(
+@"programme 1 = Maria MIRANES (INCOMPLET)");
+            Thread.Sleep(1000);
+            Console.WriteLine(
+@"programme 2 = Hugo WESTON (COMPLET)");
+            Thread.Sleep(1000);
+            Console.WriteLine(
+@"programme 3 = ERROR_03C_16
+");
+            Thread.Sleep(1000);
+            Console.Write(".");
+            Thread.Sleep(1000);
+            Console.Write(".");
+            Thread.Sleep(1000);
+            Console.Write(".\n");
+            Thread.Sleep(1000);
+
+            Game.Transition<Memor_IAOn>();
         }
     }
 }
