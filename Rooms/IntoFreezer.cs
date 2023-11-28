@@ -68,6 +68,7 @@ Voulez-vous revenir en arrière ?
                     freezingDoorUnlock = false;
                     isLeadBulletsCollected = false;
                     isMessageCollected = false;
+                    getFrozen = 0;
                 }
                 else
                 { 
