@@ -21,7 +21,8 @@ namespace ProjetNarratif.Rooms
 Vous pouvez voir des tables en métal dont une avec un [CORPS] dessus. Des
 morceaux de partie humaine, et d'autres non-humains, sont suspendus au
 plafond par des crochets.Au fond de la pièce, vous apercevez une [PORTE GELÉE]
-avec un gros [CADENAS] qui le maintient fermée.
+avec un gros [CADENAS] qui le maintient fermée. Vous pouvez sortir de la chambre
+froide à tout moment par la [PORTE].
 
 Vous pouvez [REGARDER] les alentours, regarder votre [INVENTAIRE] ou vous diriger
 vers un autre endroit avec votre [CARTE].

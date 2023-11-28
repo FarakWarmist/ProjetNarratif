@@ -47,6 +47,7 @@ Voulez-vous flatter les chiens ?
                     petTheDogs = Console.ReadLine().ToLower();
                     if (petTheDogs !="non")
                     {
+                        Console.Clear();
                         Console.WriteLine(
 @"Vous vous agenouillez à côté des deux chiens et leur caressez le cou. Il vous lèche
 la main et la joue en remerciement.
@@ -60,23 +61,27 @@ Pas étonnant qu'ils se montrent si agressifs. Ce monstre les torture et les aff
 
 En vous éloignant, ils laissent échapper ce qui ressemble à de petits jappements de
 tristesse. Ce qui vous brise le coeur, mais vous n'avez pas le choix, vous devez
-partir.");          
+partir.
+");          
                         comeBackForYou = true;
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine(
 @"Non, vous n'avez pas le temps pour ça. Vous devez sortir d'ici.");
                     }
                     break;
 
                 case "gauche":
+                    Console.Clear();
                     Console.WriteLine(
 @"Vous allez dans le couloir de gauche et remarquer ce qui sera sûrement votre porte de
 sortie.
 
 Sur le sol, se trouve une énorme [TRAPPE] mécaniqe qui est ouvrable avec le tableau au
-mur.");
+mur.
+");
                     break;
 
                 case "trappe":
@@ -89,14 +94,15 @@ car vous êtes tétanisé par ce que vous voyez à l'extérieur.");
 
                     Console.ReadKey();
                     Console.WriteLine(
-@"D'où vous êtes, vous arrivez à voir une énorme jambe mécanique, maintenant le magasin
+@"
+D'où vous êtes, vous arrivez à voir une énorme jambe mécanique, maintenant le magasin
 à 300 mètres, si ce n'est plus, au-dessus du sol.
 
 Et dehors... Vous n'avez jamais vu ça, même dans vos pires cauchemars. On dirait une plaine
 fait d'os et de chair avec une légère brume rouge sang.");
 
-                    Console.Clear();
                     Console.ReadKey();
+                    Console.Clear();
                     Console.WriteLine(
 @"Vous reprenez vos esprits lorsque vous réalisez que les 2 chiens jappent depuis un
 moment.
@@ -105,8 +111,8 @@ En vous retournant, vous êtes face à la géante qui habite ces lieux. Alors qu
 assène un coup, vous avez le réflexe de reculer. Vous faisant ainsi perdre équilibre et
 chuter.");
 
-                    Console.Clear();
                     Console.ReadKey();
+                    Console.Clear();
                     Console.WriteLine(
 @"Le temps semble s'être ralenti durant votre chute. Pendant que vous observez l'horizon,
 plusieurs choses vous passent par la tête.
@@ -185,7 +191,7 @@ Alors, dans un dernier souffle, une dernière larme, vous chuchotez au vent...
                         Console.WriteLine(
 @"
 
-    MAUVAISE FIN - BIENVENUE DANS LA FAMILLE
+    MAUVAISE FIN - BIENVENUE DANS LA FAMILLE                                                                                                                                                                                                                                                                                                    
 ");
                     }
                     else
@@ -210,6 +216,7 @@ ange est venu vous chercher. Quel soulagement.
 - « Non. Non non non non non. Reste éveillé ! Reste avec m... »
 
 Le son s'évapore, jusqu'à ce qu'il reste plus rien...");
+                        Console.ReadKey();
 
                         Console.Clear();
                         Console.WriteLine("...");
@@ -395,7 +402,7 @@ Cet endroit n'a pas dû être une vraie partie de plaisir pour eux aussi...");
 
     MERCI D'AVOIR JOUÉ !
 ");
-
+                    Game.Finish();
                     break;
 
                 case "regarder":

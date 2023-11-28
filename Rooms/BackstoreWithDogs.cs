@@ -21,7 +21,8 @@ normaux. Mais vous ne pouvez pas vous empêcher de remarquer qu'ils ont l'air
 affamés et mal nourris.
 
 Vous n'avez pas beaucoup de choix maintenant. Vous pouvez essayer de [COURIR]
-ou de regarder dans votre [INVENTAIRE] si quelque chose pourrait vous aider.";
+ou de regarder dans votre [INVENTAIRE] si quelque chose pourrait vous aider.
+";
 
         internal override void ReceiveChoice(string choice)
         {
@@ -85,7 +86,8 @@ VOUS ÊTES MORT !
 
 ___________________________
 Voulez-vous revenir en arrière ?
-[OUI] | [NON]");
+[OUI] | [NON]
+");
 
                         toDo = Console.ReadLine().ToLower();
                         if (toDo == "non")
@@ -122,11 +124,16 @@ Vous lancez les morceaux de viande un à un, chaque fois attraper en plein air p
 des deux chiens.
 
 Après avoir bien mangé, les deux paraient rassasiés et moins enclins à vous sauter à
-la gorge.");
+la gorge.
+");
                         friendlyDogs = true;
                         Freezer.isMeatCollected = false;
                         Game.Transition<Backstore>();
                     }
+                    break;
+
+                case "inventaire":
+                    Game.Inventory();
                     break;
 
                 case "journal":
