@@ -36,7 +36,7 @@ vers un autre endroit avec votre [CARTE].
                         break;
 
                 case "regarder":
-                    if (Game.hideEvent !> 5)
+                    if (Game.hideEvent <= 5)
                     {
                         Console.WriteLine("Commande invalide.");
                     }
