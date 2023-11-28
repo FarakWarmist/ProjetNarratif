@@ -339,8 +339,8 @@ Le cadenas a été renforcé, mais vous arrivez à l'arracher sans trop de mal."
                             Console.Clear();
                             Console.WriteLine(
 @"
-En ouvrant la porte, les 2 pauvres bêtes n'ont même pas la force de faire quoi que de
-vous accueillir.");
+En ouvrant la porte, les 2 pauvres bêtes n'ont même pas la force de faire de vous 
+accueillir.");
                             Console.ReadKey();   
                             Console.WriteLine(
 @"
