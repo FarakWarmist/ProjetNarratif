@@ -134,8 +134,8 @@ vous vous éloignez du corps." + warning);
 
                     break;
 
-                case "porte gelée":
-                    if (!Butchery.isBunchOfKeysCollected)
+                case "cadenas":
+                    if (Butchery.isBunchOfKeysCollected)
                     {
                         getFrozen++;
                         Console.WriteLine(
@@ -145,7 +145,9 @@ débarrer.
 La [PORTE GELÉE] est maintenant déverouillée." + warning);
                         freezingDoorUnlock = true;
                     }
+                    break;
 
+                case "porte gelée":
                     if (!freezingDoorUnlock)
                     {
                         getFrozen++;
