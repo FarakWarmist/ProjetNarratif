@@ -17,6 +17,7 @@ game.Add(new Backstore());
 game.Add(new Butchery());
     game.Add(new HideAndSeek());
 
+//Game.AllUnlock();
 
 while (!game.IsGameOver())
 {

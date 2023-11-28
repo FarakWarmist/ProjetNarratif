@@ -11,6 +11,26 @@ namespace ProjetNarratif
         static string nextRoom = "";
         internal static int hideEvent = 0;
 
+        internal static void AllUnlock()
+        {
+            Closet.isDoorUnlocked = true;
+            Closet.isFlashlightCollected = true;
+            Closet.isMapCollected = true;
+            Closet.isLogbookCollected = true;
+            Closet.isKeyCollected = true;
+            Cashier.lightsOn = true;
+            Cashier.isCoinCollected = true;
+            Phone.isMetalBarCollected = true;
+            Phone.alreadyTalk = true;
+            Butchery.isBunchOfKeysCollected = true;
+            HideAndSeek.miniGameFinished = true;
+            Freezer.isMeatCollected = true;
+            IntoFreezer.isLeadBulletsCollected = true;
+            IntoFreezer.freezingDoorUnlock = true;
+            BackstoreWithDogs.friendlyDogs = true;
+            Backstore.comeBackForYou = true;
+        }
+
         internal void Add(Room room)
         {
             rooms.Add(room);
