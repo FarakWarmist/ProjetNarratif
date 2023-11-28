@@ -179,7 +179,7 @@ Malgré le givre qui recouvre la vitre, vous pouvez voir un couloir qui va de ga
 En regardant plus bas, vous voyez ce que vous pensez être 2 chiens qui se reposent
 et gardent l'entrée.
 
-Ils seront certainement un problème lorsque vous ouvrirez la porte.");
+Ils seront certainement un problème lorsque vous ouvrirez la porte." + warning);
                     break;
 
                 case "porte":
@@ -194,7 +194,7 @@ La chaleur du magasin vous fait un bien fou après avoir été dans ce froid mor
                     getFrozen++;
                     Console.WriteLine(
 @"En regardant ce que contient la chambre froide, vous pouvez voir au pied de la
-table où est couché le [CADAVRE] des [VÊTEMENTS] qui semble hors du commun.");
+table où est couché le [CADAVRE] des [VÊTEMENTS] qui semble hors du commun." + warning);
                     break;
 
                 case "vêtements":
@@ -207,7 +207,7 @@ que portaient les soldats britanniques lors du 18e siècle.
 Comment est-ce arrivé ici ?
 
 En soulevant la tunique, un morceau de papier tombe d'une des poches. Un [MESSAGE]
-semble être écrit dessus.");
+semble être écrit dessus." + warning);
                     break;
 
                 case "message":
@@ -237,7 +237,7 @@ Tu me manques maman, j'aurais voulu m'excuser avant de partir pour la bataille.
 J'aimerais te dire que je suis déso... »
 _____________________________________________________________________________________
 
-Le reste du texte est taché par le sang.");
+Le reste du texte est taché par le sang." + warning);
                     break;
 
                 case "journal":
