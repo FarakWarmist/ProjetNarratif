@@ -17,6 +17,8 @@ game.Add(new Backstore());
 game.Add(new Butchery());
     game.Add(new HideAndSeek());
 
+game.Add(new Devinette());
+
 //Game.AllUnlock();
 
 while (!game.IsGameOver())

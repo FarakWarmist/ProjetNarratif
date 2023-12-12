@@ -70,10 +70,19 @@ puant.");
                     break;
 
                 case "disjoncteur":
-                    Console.WriteLine(
+                    if (Game.specialChristmas == true)
+                    {
+                        Console.WriteLine(
+@"Vous faites face à un étrange monsieur...");
+                        Game.Transition<Devinette>();
+                    }
+                    else
+                    {
+                        Console.WriteLine(
 @"Vous ouvrez la boîte de disjoncteurs et réalisez avec horreur que la boîte est remplie de
 chaire pulsante.
 Vous refermez immédiatement la boîte et essayez d'oublier ce que vous venez de voir.");
+                    }
                     break;
 
                 case "porte":

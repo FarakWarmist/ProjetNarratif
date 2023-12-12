@@ -8,8 +8,10 @@ namespace ProjetNarratif
         Room currentRoom;
         internal bool IsGameOver() => isFinished;
         static bool isFinished;
+        internal static bool specialChristmas = true;
         static string nextRoom = "";
         internal static int hideEvent = 0;
+        internal static int wrongAnswer = 0;
 
         internal static void AllUnlock()
         {
